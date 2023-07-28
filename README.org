@@ -1,0 +1,196 @@
+#+title: Bidipta Sarkar
+#+author: Bidipta Sarkar
+#+email: bidiptas@stanford.edu
+#+description: Bidipta Sarkar's Personal Homepage
+#+KEYWORDS: homepage, website, research, AI, RL, MARL, Vision, Graphics
+#+LANGUAGE:  en
+#+OPTIONS: email:t toc:nil num:nil html-postamble:nil html-style:nil title:nil \n:t
+#+startup: inlineimages
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css"/>
+#+HTML_HEAD: <script src="https://kit.fontawesome.com/1eb1a53221.js" crossorigin="anonymous"></script>
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+#+EXPORT_FILE_NAME: index
+
+#+PROPERTY:  header-args :eval never-export
+
+#+BEGIN_export html
+
+<div class="page-container">
+<div class="topsection">
+<div class="sidebar">
+    <div id="sidebar-head">
+        <span class="image">
+            <img src="Bidipta_Sarkar_600_600.jpg" style="border-radius: 50%">
+        </span>
+    </div>
+    <nav id="sidebar-nav">
+        <div id="nav-icons">
+            <ul>
+                
+                    <i><a href="mailto:bidiptas@stanford.edu" class="fa fa-envelope"></a></i>
+                
+                    <i><a href="https://github.com/bsarkar321" class="fa fa-github"></a></i>
+                
+                    <i><a href="https://scholar.google.com/citations?user=wr9RgmcAAAAJ" class="ai ai-google-scholar-square"></a></i>
+                
+                    <i><a href="https://www.instagram.com/bidiptas13/" class="fa fa-instagram"></a></i>
+
+		    <!-- <i><a href="https://twitter.com/bidiptas13" class="fa fa-twitter"></a></i> -->
+
+		    <i><a href="https://youtube.com/@bidi_2" class="fa fa-youtube"></a></i>
+
+            </ul>
+        </div>    
+    </nav>
+</div>
+
+<div id="titlebar">
+<h1>Bidipta Sarkar</h1>
+<div id="nav-pages">
+<ul>
+
+<li><a href="index.html">Home</a></li>
+            
+<li><a href="research/index.html">Research</a></li>
+	    
+<li><a href="art/index.html">Art Gallery</a></li>
+            
+<li><a href="blog/index.html">Blog</a></li>
+</ul>
+</div>
+</div>
+
+<div class="content_inner">
+        <section id="home">
+	  <div class="container">
+#+END_export
+
+I am a senior undergraduate at [[https://cs.stanford.edu][Stanford University]] majoring in computer science (AI track). I've been a member of Professor [[https://dorsa.fyi][Dorsa Sadigh]]'s [[https://iliad.stanford.edu/][ILIAD]] lab since my sophomore year.
+
+I am interested in creating AI agents that can interact with their environment and safely work alongside humans and other autonomous agents. My research broadly spans three subfields of computer science:
+
+\bullet Multi-Agent Reinforcement Learning: Enabling independently trained agents to cooperate on a common task and form conventions.
+
+\bullet Vision: Capturing meaningful information about an agent's environment from sensors.
+
+\bullet Graphics: Simulating the world while balancing speed and realism.
+
+#+html: </div></section></div></div><hr>
+
+#+INCLUDE: "research/research.org::*Publications" :minlevel 1
+
+#+html: <hr>
+
+* Other Projects
+
+# ** Adapting to Unknown Conventions in Cooperative Multi-Agent RL
+# #+html: <div class="outline-text-3-inner">
+# /CS330 Final Project, Fall 2023/
+
+# [[file:old_reports/330/report.pdf][Report]] / [[file:old_reports/330/poster.pdf][Poster]] / [[https://github.com/bsarkar321/Adaptive-Conventions][Code]]
+# #+html: </div>
+
+** Temporally and Spatially Novel Video Frame Synthesis using 4D Video Autoencoder
+#+html: <div class="outline-text-3-inner">
+_Bidipta Sarkar_, Xinyi Wang, Kathy Yu
+
+/CS231n Final Project, Spring 2022/
+
+#+BEGIN_export html
+<p>
+<font color="#f18800">
+(Won Best Project Poster Award)
+</font>
+</p>
+#+END_export
+
+[[http://cs231n.stanford.edu/reports/2022/pdfs/8.pdf][Report]] / [[http://cs231n.stanford.edu/reports/2022/pdfs/8p.pdf][Poster]] / [[https://twitter.com/drfeifei/status/1533840002735407104?s=46&t=M7k1cW-r1qVcTdl16BlH-A][CS231n Tweet]] / [[https://github.com/KathyFeiyang/cs231n-project][Code]]
+#+html: </div>
+
+[[file:old_reports/4dencoder.png]]
+
+** Simulating Food Interactions with Material Point Methods in Houdini
+#+html: <div class="outline-text-3-inner">
+/CS348C Final Project, Winter 2022/
+
+[[file:old_reports/348c/bidipta_mpm.txt][Report]] / [[file:old_reports/348c/mpm_houdini.hipnc][Houdini File]] / [[file:old_reports/348c/mpm_houdini.mantra_ipr.mov][Video]]
+#+html: </div>
+
+[[file:old_reports/348c_img.png]]
+
+** Real-time Cel Shading
+#+html: <div class="outline-text-3-inner">
+/CS248 Final Project, Winter 2022/
+
+[[file:old_reports/248/writeup.pdf][Report]] / [[https://drive.google.com/file/d/1RBGs3V28lLoKfwNxFO9VhEpRoYSzle0C/view?usp=sharing][Video]]
+#+html: </div>
+
+[[file:old_reports/cel_shading.png]]
+
+
+** Virtual Hand Interactions with ARKit
+#+html: <div class="outline-text-3-inner">
+/CS231a Final Project, Winter 2022/
+
+[[file:old_reports/231a.pdf][Report]] / [[https://github.com/bsarkar321/ARHandInteraction][Code]] / [[https://drive.google.com/file/d/1Rh1sHnOpdZxG6oVDIftx-JYUXNY7n2GF/view?usp=sharing][Demo Video]]
+#+html: </div>
+
+[[file:old_reports/ar_hands.png]]
+
+** The Guardian
+#+html: <div class="outline-text-3-inner">
+/CS148 Final Project, Fall 2022/
+
+[[file:old_reports/148/bidiptas.pdf][Report]] / [[file:old_reports/148/bidiptas.png][Final Image]] / [[file:old_reports/148/bidiptas_a.png][View 2]] / [[file:old_reports/148/bidiptas_b.png][No Material]] / [[https://drive.google.com/drive/folders/1lzNt7bS1suecTQy8GmH74S8LIcLHL-1y][Blend File]]
+#+html: </div>
+
+[[file:old_reports/148/bidiptas.png]]
+
+
+** Multi-Agent Self-Learning Tank Game
+#+html: <div class="outline-text-3-inner">
+_Bidipta Sarkar_, Henry Ang
+
+/CS221 Final Project, Spring 2021/
+
+[[file:old_reports/221.pdf][Report]] / [[https://github.com/guohaoang/TankGym][Code]] / [[https://youtu.be/kcZmCApSudY][Video]]
+#+html: </div>
+
+[[file:old_reports/221.jpeg]]
+
+#+html: <hr>
+
+* Teaching and Outreach
+
+** Stanford Center for Teaching and Learning CS Tutor
+
+[[file:old_reports/CTL.png]]
+
+** Tau Beta Pi Mentor
+
+[[file:old_reports/TBP.png]]
+
+
+** Section Leader (CS 106A and 106B)
+
+#+attr_html: :height 100 em
+[[file:old_reports/198.png]]
+
+#+html: <hr>
+
+#+INCLUDE: "blog/blog.org::*Blog Posts" :minlevel 1
+
+#+BEGIN_export html
+        <div class="footer">
+	  <p id="copyright">
+            &copy; 2023 Bidipta Sarkar
+	  </p>
+	</div>
+</div>
+#+END_export
+
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda nil (when (y-or-n-p "Tangle?") (org-html-export-to-html))) nil t)
+# End:

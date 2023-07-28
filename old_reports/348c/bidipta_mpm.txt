@@ -1,0 +1,18 @@
+Bidipta Sarkar
+CS 348C Final: Simulating Food Interactions with Material Point Methods
+
+For this project, I implemented the MLS-MPM algorithm to simulate a spoon cutting through a laddu (Indian sweet). At first, I wrote a python implementation of the MLS-MPM algorithm (attached in the zip), but it was extremely slow even with numba optimizations. However, I found a way to convert the code into Houdini's native vex by turning the MPM grid into a physical grid of points that store velocity and mass information and doing lookups by indexing into the specific point in the object. Each step of the MPM process lined up neatly with a vex loop, which can be seen within the Solver SOP.
+
+I also wanted to model different types of interactions between the objects and some form of cutter. For this, I first converted the cutters into a signed distance field so each grid point can determine how far away it is from the cutter. If any grid point is within the cutter's bounding box, its velocity is set along the direction of the SDF gradient, which can simulate the particles inside being pushed away from the cutter.
+
+To model the laddus, I just did many points samples from spheres in a tetrahedral pattern. These sweets are actually made of small spheres in real life, so I thought the final images looked pretty accurate. I had to tune the Young's modulus in the MPM simulation to prevent the sweets from feeling too rigid or too soft, and I think the final product looked pretty accurate.
+
+I modeled the plate and spoon in Houdini. To animate the spoon, I used a keyframed transform node.
+
+
+Sources:
+I read through the SIGGRAPH course notes on the MPM method from https://www.math.ucla.edu/~cffjiang/research/mpmcourse/mpmcourse.pdf
+
+I referenced the C++ implementation of the MLS-MPM algorithm from https://github.com/yuanming-hu/taichi_mpm
+
+I generally had to reference the vex documentation to determine what functions were possible in Houdini.

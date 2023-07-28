@@ -1,0 +1,50 @@
+#+title: Bidipta Sarkar
+#+author: Bidipta Sarkar
+#+email: bidiptas@stanford.edu
+#+description: Bidipta Sarkar's Personal Homepage
+#+KEYWORDS: homepage, website, research, AI, RL, MARL, Vision, Graphics
+#+LANGUAGE:  en
+#+OPTIONS: email:t toc:nil num:nil html-postamble:nil html-style:nil title:nil \n:t
+#+startup: inlineimages
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../style.css"/>
+#+HTML_HEAD: <script src="https://kit.fontawesome.com/1eb1a53221.js" crossorigin="anonymous"></script>
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+#+EXPORT_FILE_NAME: index
+
+#+PROPERTY:  header-args :eval never-export
+
+#+html: <div class="page-container"><div class="topsection">
+
+* Bidipta Sarkar
+  :PROPERTIES:
+  :CUSTOM_ID: titlebar-head
+  :END:
+  
+*** 
+ :PROPERTIES:
+ :CUSTOM_ID: nav-pages-head
+ :END:
+
+- [[../index.html][Home]]
+- [[../research/index.html][Research]]
+- [[../art/index.html][Art Gallery]]
+- [[../blog/index.html][Blog]]
+
+#+html: </div></div></div></div><div><div><div><div><div class="content_inner"><section id="home"><div class="container"></div></section></div></div><hr>
+
+
+* Blog Posts
+
+** Coming Soon: Overcooked Training in Madrona
+
+#+html: <hr>
+
+* 
+
+#+html: </div><div><div class="footer"><p id="copyright">&copy; 2023 Bidipta Sarkar</p></div></div>
+
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda nil (when (y-or-n-p "Tangle?") (org-html-export-to-html))) nil t)
+# End:

@@ -1,0 +1,200 @@
+#+title: Bidipta Sarkar
+#+author: Bidipta Sarkar
+#+email: bidiptas@stanford.edu
+#+description: Bidipta Sarkar's Personal Homepage
+#+KEYWORDS: homepage, website, research, AI, RL, MARL, Vision, Graphics
+#+LANGUAGE:  en
+#+OPTIONS: email:t toc:nil num:nil html-postamble:nil html-style:nil title:nil \n:t
+#+startup: inlineimages
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../style.css"/>
+#+HTML_HEAD: <script src="https://kit.fontawesome.com/1eb1a53221.js" crossorigin="anonymous"></script>
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+#+EXPORT_FILE_NAME: index
+
+#+PROPERTY:  header-args :eval never-export
+
+#+html: <div class="page-container"><div class="topsection">
+
+* Bidipta Sarkar
+  :PROPERTIES:
+  :CUSTOM_ID: titlebar-head
+  :END:
+  
+*** 
+ :PROPERTIES:
+ :CUSTOM_ID: nav-pages-head
+ :END:
+
+- [[../index.html][Home]]
+- [[../research/index.html][Research]]
+- [[../art/index.html][Art Gallery]]
+- [[../blog/index.html][Blog]]
+
+#+html: </div></div></div></div><div><div><div><div><div class="content_inner"><section id="home"><div class="container"></div></section></div></div><hr>
+
+
+* Art Gallery
+:PROPERTIES:
+:CUSTOM_ID: gallery
+:END:
+
+
+** 
+[[file:../old_reports/348c_img.png]]
+
+** 
+[[file:../old_reports/348c/Hw4.png]]
+
+** 
+[[file:../old_reports/348c/Hw3.png]]
+
+** 
+[[file:../old_reports/348c/Hw2.png]]
+
+** 
+[[file:../old_reports/348c/Hw1.png]]
+
+** 
+[[file:../old_reports/cel_shading.png]]
+
+** 
+[[file:../old_reports/148/bidiptas.png]]
+
+# ** 
+# [[file:../old_reports/148/bidiptas_a.png]]
+
+# ** 
+# [[file:../old_reports/148/bidiptas_b.png]]
+
+** 
+[[file:../old_reports/148/Checkpoint6.png]]
+
+** 
+[[file:../old_reports/148/rendered_penguin.png]]
+
+** 
+[[file:../old_reports/148/squirrel1.png]]
+
+# ** 
+# [[file:../old_reports/148/squirrel2.png]]
+
+** 
+[[file:../old_reports/148/Checkpoint4.png]]
+
+
+
+
+
+
+
+
+
+
+
+** 
+[[file:../old_reports/other_art/spiderman.jpg]]
+
+
+** 
+[[file:../old_reports/other_art/koala.JPG]]
+
+
+** 
+[[file:../old_reports/other_art/face1.jpeg]]
+
+
+** 
+[[file:../old_reports/other_art/Earth.jpg]]
+
+** 
+[[file:../old_reports/other_art/lion_king.jpg]]
+
+
+** 
+[[file:../old_reports/other_art/portrait2.PNG]]
+
+
+** 
+[[file:../old_reports/other_art/donut.png]]
+
+** 
+[[file:../old_reports/other_art/tiger.PNG]]
+
+
+** 
+[[file:../old_reports/other_art/Jimmy_Garropolo_.jpg]]
+
+
+** 
+[[file:../old_reports/other_art/Baby_Candy.jpg]]
+
+** 
+[[file:../old_reports/other_art/wall_e.jpg]]
+
+** 
+[[file:../old_reports/other_art/bunny.PNG]]
+
+
+** 
+[[file:../old_reports/other_art/Kobe.jpg]]
+
+
+** 
+[[file:../old_reports/other_art/Butterfly.jpg]]
+
+
+** 
+[[file:../old_reports/other_art/Bidipta_Portrait.jpg]]
+
+
+
+** 
+[[file:../old_reports/other_art/Guitar.JPG]]
+
+** 
+[[file:../old_reports/other_art/Chaplin.JPG]]
+
+** 
+[[file:../old_reports/other_art/Pagoda.JPG]]
+
+** 
+[[file:../old_reports/other_art/Fantasy.jpeg]]
+
+** 
+[[file:../old_reports/other_art/Globe.JPG]]
+
+** 
+[[file:../old_reports/other_art/Abstract.JPG]]
+
+** 
+[[file:../old_reports/other_art/Snake.jpg]]
+
+** 
+[[file:../old_reports/other_art/Usain.JPG]]
+
+** 
+[[file:../old_reports/other_art/elephant.JPG]]
+
+** 
+[[file:../old_reports/other_art/BW_tiger.jpeg]]
+
+#+html: </div></div></div><hr>
+
+* 
+
+#+BEGIN_export html
+
+<div class="footer">
+	  <p id="copyright">
+            &copy; 2023 Bidipta Sarkar
+	  </p>
+	  </div>
+<div>
+<div>
+#+END_export
+
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda nil (when (y-or-n-p "Tangle?") (org-html-export-to-html))) nil t)
+# End:
