@@ -46,5 +46,5 @@
 #+html: </div><div><div class="footer"><p id="copyright">&copy; 2023 Bidipta Sarkar</p></div></div>
 
 # Local Variables:
-# eval: (add-hook 'after-save-hook (lambda nil (when (y-or-n-p "Tangle?") (org-html-export-to-html))) nil t)
+# eval: (add-hook 'after-save-hook (lambda nil (when (y-or-n-p "Tangle?") (org-html-export-to-html) (push-mark) (find-file "../README.org") (org-html-export-to-html) (pop-global-mark))) nil t)
 # End:

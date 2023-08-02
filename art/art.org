@@ -8,12 +8,49 @@
 #+startup: inlineimages
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../style.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="gallery.css"/>
 #+HTML_HEAD: <script src="https://kit.fontawesome.com/1eb1a53221.js" crossorigin="anonymous"></script>
 #+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 #+EXPORT_FILE_NAME: index
 
 #+PROPERTY:  header-args :eval never-export
+
+#+BEGIN_export html
+
+<script>
+      var idx = -1;
+      window.onload = function() {
+	  var anchors = document.getElementsByClassName('outline-3');
+	  for(var i = 0; i < anchors.length; i++) {
+	      var anchor = anchors[i];
+	      anchor.idx = i;
+	      anchor.addEventListener('click', function (event) {
+		  anchors[this.idx].classList.toggle("fullscreen");
+		  if (idx == -1) {
+		      idx = this.idx;
+		      document.querySelector('html').style.overflow = "hidden";
+		  } else {
+		      idx = -1;
+		      document.querySelector('html').style.overflow = "auto";
+		      this.scrollIntoView({ block: "nearest" });
+		  }
+	      });
+	  }
+	  document.addEventListener('keydown', function (event) {
+	      if (event.key == 'ArrowRight' && idx >= 0 && idx < anchors.length - 1){
+		  anchors[idx + 1].classList.toggle("fullscreen");
+		  anchors[idx].classList.toggle("fullscreen");
+		  idx += 1;
+	      } else if (event.key == 'ArrowLeft' && idx > 0){
+		  anchors[idx - 1].classList.toggle("fullscreen");
+		  anchors[idx].classList.toggle("fullscreen");
+		  idx -= 1;
+	      }
+	  });
+      }
+</script>
+#+END_export
 
 #+html: <div class="page-container"><div class="topsection">
 
@@ -36,148 +73,143 @@
 
 
 * Art Gallery
+
+#+begin_quote
+Hover over images to read their caption. Click them for a full-screen view and use the left and right arrow keys to navigate.
+#+end_quote
+
+* 
 :PROPERTIES:
 :CUSTOM_ID: gallery
 :END:
 
-
-** 
+** CS348c Final Project: Simulating food interactions with MPM in Houdini @@html:<br>@@
 [[file:../old_reports/348c_img.png]]
 
-** 
-[[file:../old_reports/348c/Hw4.png]]
-
-** 
-[[file:../old_reports/348c/Hw3.png]]
-
-** 
-[[file:../old_reports/348c/Hw2.png]]
-
-** 
-[[file:../old_reports/348c/Hw1.png]]
-
-** 
+** CS248 Final Project: Real-time Cel Shading @@html:<br>@@
 [[file:../old_reports/cel_shading.png]]
 
-** 
+** First self-portrait in Procreate @@html:<br>@@
+[[file:../old_reports/other_art/Bidipta_Portrait.jpg]]
+
+** Drawing of my dog, Candy, in Procreate @@html:<br>@@
+[[file:../old_reports/other_art/Baby_Candy.jpg]]
+
+** CS348c Homework 4: Character FX (with Raghav Ganesh) @@html:<br>@@
+[[file:../old_reports/348c/Hw4.png]]
+
+** CS348c Homework 3: Dynamics (with Raghav Ganesh) @@html:<br>@@
+[[file:../old_reports/348c/Hw3.png]]
+
+** Stuffed penguin toy in Blender @@html:<br>@@
+[[file:../old_reports/148/rendered_penguin.png]]
+
+** Squirrel in Blender @@html:<br>@@
+[[file:../old_reports/148/squirrel1.png]]
+
+** CS148 Final Project: The Guardian @@html:<br>@@
 [[file:../old_reports/148/bidiptas.png]]
 
-# ** 
-# [[file:../old_reports/148/bidiptas_a.png]]
+** CS148 Final Project: Alternate View @@html:<br>@@
+[[file:../old_reports/148/bidiptas_a.png]]
+
+
+
+** Spider-Man Spiderverse Fanart using Procreate @@html:<br>@@
+[[file:../old_reports/other_art/spiderman.jpg]]
+
+
+** Koala Drawing using Procreate @@html:<br>@@
+[[file:../old_reports/other_art/koala.JPG]]
+
+
+** CS348c Homework 2: Procedural Modeling @@html:<br>@@
+[[file:../old_reports/348c/Hw2.png]]
+
+** CS348c Homework 1: First Houdini Project @@html:<br>@@
+[[file:../old_reports/348c/Hw1.png]]
 
 # ** 
 # [[file:../old_reports/148/bidiptas_b.png]]
 
-** 
-[[file:../old_reports/148/Checkpoint6.png]]
-
-** 
-[[file:../old_reports/148/rendered_penguin.png]]
-
-** 
-[[file:../old_reports/148/squirrel1.png]]
+# **
+# # [[file:../old_reports/148/Checkpoint6.png]]
 
 # ** 
 # [[file:../old_reports/148/squirrel2.png]]
 
-** 
+** CS148 Custom Raytracing @@html:<br>@@
 [[file:../old_reports/148/Checkpoint4.png]]
 
 
-
-
-
-
-
-
-
-
-
-** 
-[[file:../old_reports/other_art/spiderman.jpg]]
-
-
-** 
-[[file:../old_reports/other_art/koala.JPG]]
-
-
-** 
+** Sculpt of my face in Blender @@html:<br>@@
 [[file:../old_reports/other_art/face1.jpeg]]
 
 
-** 
+** Drawing of Earth using Procreate @@html:<br>@@
 [[file:../old_reports/other_art/Earth.jpg]]
 
-** 
+** Drawing of a Lion King scene using Procreate @@html:<br>@@
 [[file:../old_reports/other_art/lion_king.jpg]]
 
 
-** 
+** Second self-portrait in Procreate @@html:<br>@@
 [[file:../old_reports/other_art/portrait2.PNG]]
 
 
-** 
+** Donut render in Blender @@html:<br>@@
 [[file:../old_reports/other_art/donut.png]]
 
-** 
+** Drawing of tiger eye in Procreate @@html:<br>@@
 [[file:../old_reports/other_art/tiger.PNG]]
 
 
-** 
+** Drawing of Jimmy Garoppolo in Procreate @@html:<br>@@
 [[file:../old_reports/other_art/Jimmy_Garropolo_.jpg]]
 
-
-** 
-[[file:../old_reports/other_art/Baby_Candy.jpg]]
-
-** 
+** Drawing of Wall-E scene in Procreate @@html:<br>@@
 [[file:../old_reports/other_art/wall_e.jpg]]
 
-** 
+** Drawing of a bunny in Procreate @@html:<br>@@
 [[file:../old_reports/other_art/bunny.PNG]]
 
 
-** 
+** Drawing of Kobe Bryant in Procreate @@html:<br>@@
 [[file:../old_reports/other_art/Kobe.jpg]]
 
 
-** 
+** Drawing of a butterfly in Procreate @@html:<br>@@
 [[file:../old_reports/other_art/Butterfly.jpg]]
 
 
-** 
-[[file:../old_reports/other_art/Bidipta_Portrait.jpg]]
-
-
-
-** 
+** Oil Painting of a man with a guitar @@html:<br>@@
 [[file:../old_reports/other_art/Guitar.JPG]]
 
-** 
+** Pencil drawing of Charlie Chaplin @@html:<br>@@
 [[file:../old_reports/other_art/Chaplin.JPG]]
 
-** 
+** Oil painting of a pagoda next to waterfalls @@html:<br>@@
 [[file:../old_reports/other_art/Pagoda.JPG]]
 
-** 
+** Oil Painting of a fantasy scene @@html:<br>@@
 [[file:../old_reports/other_art/Fantasy.jpeg]]
 
-** 
+** Color pencil drawing of snow globe in a desert @@html:<br>@@
 [[file:../old_reports/other_art/Globe.JPG]]
 
-** 
+** Color pencil abstract portrait @@html:<br>@@
 [[file:../old_reports/other_art/Abstract.JPG]]
 
-** 
+** Color pencil drawing of a snake @@html:<br>@@
 [[file:../old_reports/other_art/Snake.jpg]]
 
-** 
+** Color pencil drawing of Usain Bolt @@html:<br>@@
 [[file:../old_reports/other_art/Usain.JPG]]
 
-** 
+** Ink of an elephant @@html:<br>@@
 [[file:../old_reports/other_art/elephant.JPG]]
 
-** 
+** Pencil drawing of a tiger @@html:<br>@@
 [[file:../old_reports/other_art/BW_tiger.jpeg]]
 
 #+html: </div></div></div><hr>

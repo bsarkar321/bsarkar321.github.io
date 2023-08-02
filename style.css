@@ -146,19 +146,23 @@ a {
  text-decoration:none;
  color:#f18800;
  cursor:pointer;
- -moz-transition:all 0.35s, color 0.1s ease-in-out;
- -webkit-transition:all 0.35s, color 0.1s ease-in-out;
- -ms-transition:all 0.35s, color 0.1s ease-in-out;
- transition:all 0.35s, color 0.1s ease-in-out
+ -moz-transition:all 1s, color 0.3s ease-in-out;
+ -webkit-transition:all 1s, color 0.3s ease-in-out;
+ -ms-transition:all 1s, color 0.3s ease-in-out;
+ transition:all 1s, color 0.3s ease-in-out;
+ height: 0em;
 }
 a:hover {
- color:#f18800
+ color:#aa6812
 }
 section {
  padding-top:20.5em
 }
 .topsection {
     overflow-y:auto;
+}
+#nav-container {
+    height: 10em;
 }
 .sidebar {
     height:100%;
@@ -184,9 +188,10 @@ section {
 }
 #nav-icons {
     padding-top:2.4em;
-    display: flex;
+    display: block;
     justify-content: center;
     padding-bottom: 2.4em;
+    height: 2em;
 }
 #nav-icons a {
  padding-right:0.77em;
@@ -207,7 +212,8 @@ section {
  padding-top:12em;
  padding-right:5em;
  width:110em;
- background-color:rgba(255,255,255,0.9)
+ background-color:rgba(255,255,255,0.9);
+ z-index: 10;
 }
 h2 {
     margin-top:1em;
@@ -490,7 +496,11 @@ hr {
 #outline-container-gallery img {
     width: 100%;
     max-height: none;
-    float: none;
+    image-rendering: auto;
+}
+
+#outline-container-gallery .outline-text-3 {
+    display: flex;
 }
 
 #outline-container-gallery {

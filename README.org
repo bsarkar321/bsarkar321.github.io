@@ -100,9 +100,7 @@ _Bidipta Sarkar_, Xinyi Wang, Kathy Yu
 
 #+BEGIN_export html
 <p>
-<font color="#f18800">
 (Won Best Project Poster Award)
-</font>
 </p>
 #+END_export
 

@@ -63,7 +63,7 @@ Brennan Shacklett, Luc Guy Rosenzweig, Zhiqiang Xie, _Bidipta Sarkar_, Andrew Sz
 
 /Transactions on Graphics 2023/
 
-Paper (coming soon) / [[https://github.com/bsarkar321/madrona_rl_envs][2D Environments]] / Blog (coming soon) / [[https://colab.research.google.com/github/bsarkar321/madrona_rl_envs/blob/master/overcooked_compiled_colab.ipynb][Overcooked Training Colab]]
+[[https://madrona-engine.github.io/shacklett_siggraph23.pdf][Paper]] / [[https://madrona-engine.github.io][Website]] / [[https://github.com/bsarkar321/madrona_rl_envs][RL Environments]] / Blog (coming soon) / [[https://colab.research.google.com/github/bsarkar321/madrona_rl_envs/blob/master/overcooked_compiled_colab.ipynb][Colab]]
 #+html: </div>
 
 [[file:../old_reports/madrona.png]]
@@ -93,5 +93,5 @@ _Bidipta Sarkar*_, Aditi Talati*, Andy Shih*, Dorsa Sadigh
 #+END_export
 
 # Local Variables:
-# eval: (add-hook 'after-save-hook (lambda nil (when (y-or-n-p "Tangle?") (org-html-export-to-html))) nil t)
+# eval: (add-hook 'after-save-hook (lambda nil (when (y-or-n-p "Tangle?") (org-html-export-to-html) (push-mark) (find-file "../README.org") (org-html-export-to-html) (pop-global-mark))) nil t)
 # End:
