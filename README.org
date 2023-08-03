@@ -23,7 +23,7 @@
 <div id="titlebar">
 <h1>Bidipta Sarkar</h1>
 <div id="nav-pages">
-<ul>
+<ul class="org-ul">
 
 <li><a href="index.html">Home</a></li>
             
