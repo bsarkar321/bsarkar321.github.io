@@ -76,7 +76,7 @@ I am interested in creating AI agents that can interact with their environment a
 
 \bullet Vision: Capturing meaningful information about an agent's environment from sensors.
 
-\bullet Graphics: Simulating the world while balancing speed and realism.
+\bullet Graphics: Simulating environments while balancing speed and realism.
 
 #+html: </div></section></div></div><hr>
 
