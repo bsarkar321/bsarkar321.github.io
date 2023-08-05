@@ -9,6 +9,10 @@ table{
     position:relative;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 td{
     vertical-align:top}
 
@@ -45,7 +49,7 @@ table tr:nth-child(2n) td{
 }
 
 .codeblock,pre.src,#content .literal-block{
-    font-size:1.8em;
+    font-size:13px;
     border:1px solid #e1e4e5;
     padding:12px;
     background:#fff;
@@ -88,24 +92,24 @@ blockquote > ol {
     padding-left: 10pt;
 
     padding-top: 0pt;
-padding-bottom: 10pt;
+    padding-bottom: 10pt;
 
     color: #000000;
-  font-weight: 400;
-  text-decoration: none;
-  vertical-align: baseline;
-  font-size: 14pt;
-  font-style: normal;
-  line-height: 1.15;
-  text-align: left;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 14pt;
+    font-style: normal;
+    line-height: 1.15;
+    text-align: left;
 }
 
 .step2bullets > .org-ul > li::marker {
-  margin-left: -18pt;
-white-space: nowrap;
-display: inline-block;
-min-width: 18pt;
-content: "\0025cf ";
+    margin-left: -18pt;
+    white-space: nowrap;
+    display: inline-block;
+    min-width: 18pt;
+    content: "\0025cf ";
 }
 
 .step3bullets > .org-ol > li {
@@ -114,16 +118,16 @@ content: "\0025cf ";
     padding-left: 10pt;
 
     padding-top: 0pt;
-padding-bottom: 10pt;
+    padding-bottom: 10pt;
 
     color: #000000;
-  font-weight: 400;
-  text-decoration: none;
-  vertical-align: baseline;
-  font-size: 14pt;
-  font-style: normal;
-  line-height: 1.15;
-  text-align: left;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 14pt;
+    font-style: normal;
+    line-height: 1.15;
+    text-align: left;
 }
 
 img {
@@ -135,99 +139,107 @@ img {
 }
 
 h2 {
-  color: #000000;
-  font-weight: 700;
-  text-decoration: none;
-  vertical-align: baseline;
-  font-size: 25pt;
-  font-style: normal;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 25pt;
+    font-style: normal;
 
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 h2 > b {
-  color: #000000;
-  font-weight: 700;
-  font-size: 27pt;
-  line-height: 1.15;
-  text-align: left;
+    color: #000000;
+    font-weight: 700;
+    font-size: 27pt;
+    line-height: 1.15;
+    text-align: left;
 }
 
 .c48 {
-  color: #000000;
-  font-weight: 400;
-  text-decoration: none;
-  vertical-align: baseline;
-  font-size: 17pt;
-  font-style: normal;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 17pt;
+    font-style: normal;
 }
 
 p {
-  color: #000000;
-  font-weight: 400;
-  text-decoration: none;
-  vertical-align: baseline;
-  font-size: 14pt;
-  font-style: normal;
-  line-height: 1.15;
-  text-align: left;
-  padding: 10px 0px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 14pt;
+    font-style: normal;
+    line-height: 1.15;
+    text-align: left;
+    padding: 10px 0px;
 }
 
 h3 {
-  color: #000000;
-  font-weight: 700;
-  font-size: 17pt;
-  line-height: 1.15;
-  text-align: left;
+    color: #000000;
+    font-weight: 700;
+    font-size: 17pt;
+    line-height: 1.15;
+    text-align: left;
 
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 h4 {
-  color: #434343;
-  font-weight: 700;
-  font-size: 16pt;
-  line-height: 1.15;
-  text-align: left;
+    color: #434343;
+    font-weight: 700;
+    font-size: 16pt;
+    line-height: 1.15;
+    text-align: left;
+
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
- /* Style the button that is used to open and close the collapsible content */
+/* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #ccc;
+    background-color: #ccc;
 }
 
 /* Style the collapsible content. Note: hidden by default */
 .contentx {
-  padding: 0 50px;
-  overflow: hidden;
-  background-color: #f1f1f1;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
+    padding: 0 50px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    background-color: #f1f1f1;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
 
-  color: #000000;
-  font-weight: 400;
-  text-decoration: none;
-  vertical-align: baseline;
-  font-size: 11pt;
-  font-style: normal;
-  line-height: 1.15;
-  text-align: left;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 13pt;
+    font-style: normal;
+    line-height: 1.15;
+    text-align: left;
+}
+
+.contentlist {
+    white-space: pre;
 }
 
 .footpara {
@@ -240,4 +252,8 @@ h4 {
 
 .outline-3 h3 {
     width: 100%;
+}
+
+.outline-3 {
+    padding: 0;
 }
