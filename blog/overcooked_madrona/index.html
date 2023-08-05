@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-08-05 Sat 01:16 -->
+<!-- 2023-08-05 Sat 15:57 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Overcooked in Thousands of Kitchens: Training Top Performing Agents in Under a Minute</title>
@@ -56,9 +56,9 @@
 </div>
 </div>
 
-<div id="outline-container-org199295e" class="outline-2">
-<h2 id="org199295e"><b>Overcooked in Thousands of Kitchens: Training Top Performing Agents in Under a Minute</b></h2>
-<div class="outline-text-2" id="text-org199295e">
+<div id="outline-container-org937b9a1" class="outline-2">
+<h2 id="org937b9a1"><b>Overcooked in Thousands of Kitchens: Training Top Performing Agents in Under a Minute</b></h2>
+<div class="outline-text-2" id="text-org937b9a1">
 <p class="c48">A case study of speeding up Overcooked training performance by 60x.</p>
 
 <p>
@@ -71,7 +71,7 @@ In my reinforcement learning research, the high cost of simulating virtual envir
 </p>
 
 
-<div id="org060bc4f" class="figure">
+<div id="org4172c8e" class="figure">
 <p><img src="53.png" alt="53.png" /><br />
 </p>
 </div>
@@ -100,9 +100,9 @@ If you want to try it out, see <a href="https://github.com/bsarkar321/madrona_rl
 </div>
 </div>
 
-<div id="outline-container-org40399c1" class="outline-2">
-<h2 id="org40399c1">RL Implications of High-Performance Simulation</h2>
-<div class="outline-text-2" id="text-org40399c1">
+<div id="outline-container-org6f4c1b9" class="outline-2">
+<h2 id="org6f4c1b9">RL Implications of High-Performance Simulation</h2>
+<div class="outline-text-2" id="text-org6f4c1b9">
 <p>
 The high performance of my Overcooked environment significantly impacted the types of experiments I conducted in recent RL projects. I have been able to conduct more thorough hyperparameter sweeps since individual training runs are significantly faster. In addition to faster training times, I’ve experienced more stable training curves as I’ve increased the number of environments simulated in parallel.<br />
 </p>
@@ -147,9 +147,9 @@ Readers interested in using these high-performance simulators to conduct RL expe
 </div>
 </div>
 
-<div id="outline-container-orgf1aee29" class="outline-2">
-<h2 id="orgf1aee29">Implementing a High Performance Overcooked Simulator</h2>
-<div class="outline-text-2" id="text-orgf1aee29">
+<div id="outline-container-orgb2fba64" class="outline-2">
+<h2 id="orgb2fba64">Implementing a High Performance Overcooked Simulator</h2>
+<div class="outline-text-2" id="text-orgb2fba64">
 <p>
 The rest of this article is targeted at readers interested in writing high-performance, GPU accelerated simulators for their own RL tasks. I will go into technical detail of how I ported Overcooked to the GPU using a game engine called Madrona. You can think of Madrona as a game engine designed to make it easier to implement custom RL environments that run efficiently in large batches on the GPU (up to tens of thousands of environments in parallel on a single GPU). Madrona was presented at the SIGGRAPH 2023 conference and you can learn more about the system <a href="https://madrona-engine.github.io/">here</a>. (Disclosure: I am a co-author of the paper.)<br />
 </p>
@@ -167,13 +167,13 @@ By sharing my experiences, I hope to provide a useful example that can assist yo
 </p>
 </div>
 
-<div id="outline-container-orgc0e93dd" class="outline-3">
-<h3 id="orgc0e93dd">Part 1: A Basic Parallel Implementation on the GPU</h3>
-<div class="outline-text-3" id="text-orgc0e93dd">
+<div id="outline-container-org9c73ad4" class="outline-3">
+<h3 id="org9c73ad4">Part 1: A Basic Parallel Implementation on the GPU</h3>
+<div class="outline-text-3" id="text-org9c73ad4">
 </div>
-<div id="outline-container-org937e331" class="outline-4">
-<h4 id="org937e331">Step 1: Preparation to Port: Simplifying Overcooked’s Python Implementation</h4>
-<div class="outline-text-4" id="text-org937e331">
+<div id="outline-container-org782f5f4" class="outline-4">
+<h4 id="org782f5f4">Step 1: Preparation to Port: Simplifying Overcooked’s Python Implementation</h4>
+<div class="outline-text-4" id="text-org782f5f4">
 <p>
 My ultimate goal was to create a high-performance GPU implementation of Overcooked. Since Madrona is a C++ API, this requires porting game logic from Python to CUDA C++.<br />
 </p>
@@ -188,9 +188,9 @@ The most important part of this preparation step was replacing more complex Pyth
 </div>
 </div>
 
-<div id="outline-container-org10ba1d8" class="outline-4">
-<h4 id="org10ba1d8">Step 2: Rewriting Overcooked using Entity Component System Concepts</h4>
-<div class="outline-text-4" id="text-org10ba1d8">
+<div id="outline-container-org801af61" class="outline-4">
+<h4 id="org801af61">Step 2: Rewriting Overcooked using Entity Component System Concepts</h4>
+<div class="outline-text-4" id="text-org801af61">
 <p>
 An experienced GPU programmer knows that one way to port Overcooked to run N environments at once on the GPU would be to take the Python game logic from step 1, which defines how to step one environment, and directly port that logic to CUDA C++ while changing all game state variables to be arrays of length N. In this design, every GPU thread executes the logic for a single unique environment instance by reading and writing to these game state arrays at the index given by the current threadId. This approach has several drawbacks, which include:<br />
 </p>
@@ -379,9 +379,9 @@ By moving from python to C++, and executing many environments in parallel to uti
 </div>
 </div>
 
-<div id="outline-container-orgebf283b" class="outline-3">
-<h3 id="orgebf283b">Part 2: Higher Performance via Intra-Environment Parallelism</h3>
-<div class="outline-text-3" id="text-orgebf283b">
+<div id="outline-container-org4a5c241" class="outline-3">
+<h3 id="org4a5c241">Part 2: Higher Performance via Intra-Environment Parallelism</h3>
+<div class="outline-text-3" id="text-org4a5c241">
 <p>
 Increasing throughput from 3000 to 2M steps/sec is a notable performance increase, but we can do better. We’d like to not only parallelize across worlds, but parallelize computation within each world as well. Overall, using the techniques for harnessing intra-world parallelism in the remainder of the section I was able to increase performance by an additional 75%, achieving <b>3.5 million experience steps per second</b>.<br />
 </p>
@@ -406,9 +406,9 @@ One example of leveraging queries to implement fine-grained parallelism is how I
 </p>
 </div>
 
-<div id="outline-container-org37b3be1" class="outline-4">
-<h4 id="org37b3be1">Step 3.1: Parallelize Observation Generation</h4>
-<div class="outline-text-4" id="text-org37b3be1">
+<div id="outline-container-orgd6cfdf0" class="outline-4">
+<h4 id="orgd6cfdf0">Step 3: Parallelize Observation Generation</h4>
+<div class="outline-text-4" id="text-orgd6cfdf0">
 <p>
 Each agent is given an observation of each tile in the environment, represented as a 3D array. Specifically, at each (x, y) location, there are 26 features representing some information about the state of the world. For instance, the feature 0 indicates if the agent is present at this location, while feature 21 indicates whether there is a soup object at a location.<br />
 </p>
@@ -482,14 +482,14 @@ For example, here’s a rewrite of the observations function that now defines wh
 </div>
 
 <p>
-Now, when the Overcooked simulator invokes the new observation system, the code is run in parallel across all location-agent pairs of all instances. For a 4x5 Overcooked map, when running a batch of 1000 environments, this is 40,000 parallel invocations of the observationSystem function.<br />
+Now, when the Overcooked simulator invokes the new observation system, the code is run in parallel across all location-agent pairs of all instances. For a 4x5 Overcooked map, when running a batch of 1000 environments, this is 40,000 parallel invocations of the <font style="font-family: monospace;" color="#61AFEF">observationSystem</font> function.<br />
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc8d0124" class="outline-4">
-<h4 id="orgc8d0124">Step 3.2: Parallelize Collision Detection</h4>
-<div class="outline-text-4" id="text-orgc8d0124">
+<div id="outline-container-org86df883" class="outline-4">
+<h4 id="org86df883">Step 4: Parallelize Collision Detection</h4>
+<div class="outline-text-4" id="text-org86df883">
 <p>
 The overcooked simulator must detect collisions between the agents in an environment. To detect if a collision has occurred, the original Overcooked-AI code loops over all pairs of agents, and checks if any pair of agents is trying to move to the same location or have “swapped” spots. If this ever happens, no agent is allowed to move to a new location for that turn, and only the agents’ orientations are updated. Otherwise, both the positions and orientations of all agents are updated. Checking collisions for all pairs can be expensive if an Overcooked environment involves many agents.<br />
 </p>
@@ -547,9 +547,9 @@ Finally, each agent moves to the new tile if there is no collision, or stays on 
 </div>
 </div>
 
-<div id="outline-container-org1beabd5" class="outline-4">
-<h4 id="org1beabd5">Step 3.3: Parallelize Interaction Processing</h4>
-<div class="outline-text-4" id="text-org1beabd5">
+<div id="outline-container-orgfea1990" class="outline-4">
+<h4 id="orgfea1990">Step 5: Parallelize Interaction Processing</h4>
+<div class="outline-text-4" id="text-orgfea1990">
 <p>
 Agents in Overcooked have the ability to “interact” with their environment by facing a specific tile and choosing the INTERACT action. For instance, interacting with a pile of onions with an empty hand allows the agent to take an onion, and interacting with cooked soup while holding a plate fills the plate with soup.<br />
 </p>
@@ -564,11 +564,11 @@ The key observation is that at most four agents can interact with a single tile 
 </div>
 </div>
 
-<div id="outline-container-org62ba7d5" class="outline-4">
-<h4 id="org62ba7d5">Result of Intra-Environment Parallelism</h4>
-<div class="outline-text-4" id="text-org62ba7d5">
+<div id="outline-container-org6101633" class="outline-4">
+<h4 id="org6101633">Result of Intra-Environment Parallelism</h4>
+<div class="outline-text-4" id="text-org6101633">
 <p>
-When there are only two agents, the additional logic introduced by the techniques in steps 3.2 and 3.3 undermine the benefits of parallelizing the interactions over agents. When simulating 1000 environments of the Cramped Room layout, this additional parallelism only brings the steps-per-second from 2 million to 3.5 million.<br />
+When there are only two agents, the additional logic introduced by the techniques in steps 4 and 5 undermine the benefits of parallelizing the interactions over agents. When simulating 1000 environments of the Cramped Room layout, this additional parallelism only brings the steps-per-second from 2 million to 3.5 million.<br />
 </p>
 
 <p>
@@ -580,11 +580,11 @@ The real benefit of intra-environment parallelism becomes clearer in layouts wit
 </div>
 
 
-<div id="outline-container-orga002265" class="outline-2">
-<h2 id="orga002265">Closing Thoughts</h2>
-<div class="outline-text-2" id="text-orga002265">
+<div id="outline-container-org4e6aa7f" class="outline-2">
+<h2 id="org4e6aa7f">Closing Thoughts</h2>
+<div class="outline-text-2" id="text-org4e6aa7f">
 <p>
-When reflecting on the process of porting Overcooked to Madrona, I feel it was a smoother process when compared to existing alternatives for creating GPU-accelerated environments, like PyTorch, Taichi Lang, or Direct CUDA C++. In particular, I appreciated only needing to think about how to implement a single instance of Overcooked while letting Madrona handle the rest. The ECS design required me to consider how the simulation could be broken down into distinct entities, which encouraged me to re-architect parts of the code that used for-loops.<br />
+When reflecting on the process of porting Overcooked to Madrona, I feel it was a smoother process when compared to existing alternatives for creating GPU-accelerated environments, like PyTorch, Taichi Lang, or Direct CUDA C++. In particular, I appreciated only needing to think about how to implement a single instance of Overcooked while letting Madrona handle the rest. The ECS design required me to consider how the simulation could be broken down into distinct entities, which encouraged me to re-architect parts of the code that ran in serial.<br />
 </p>
 
 <p>
@@ -596,9 +596,9 @@ I hope this post inspires you to try implementing your own environments in Madro
 </div>
 </div>
 
-<div id="outline-container-org7d1ecb1" class="outline-2">
-<h2 id="org7d1ecb1"></h2>
-<div class="outline-text-2" id="text-org7d1ecb1">
+<div id="outline-container-org52382fa" class="outline-2">
+<h2 id="org52382fa"></h2>
+<div class="outline-text-2" id="text-org52382fa">
 </div><div><div class="footer"><p id="copyright">&copy; 2023 Bidipta Sarkar</p></div></div>
 </div>
 </div>

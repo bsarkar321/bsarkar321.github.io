@@ -44,10 +44,6 @@ table tr:nth-child(2n) td{
     background-color:white;
 }
 
-.src {
-    font-size:1.8em;
-}
-
 .codeblock,pre.src,#content .literal-block{
     font-size:13px;
     border:1px solid #e1e4e5;

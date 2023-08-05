@@ -12,6 +12,7 @@
 #+HTML_HEAD: <script src="https://kit.fontawesome.com/1eb1a53221.js" crossorigin="anonymous"></script>
 #+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 #+HTML_HEAD: <script src="../../common_animations.js"></script>
+#+MACRO: color @@html:<font style="font-family: monospace;" color="$1">$2</font>@@
 
 #+EXPORT_FILE_NAME: index
 
@@ -208,7 +209,7 @@ This is where the higher-level ECS abstractions of Madrona’s programming model
 
 One example of leveraging queries to implement fine-grained parallelism is how I parallelized observation generation.
 
-*** Step 3.1: Parallelize Observation Generation
+*** Step 3: Parallelize Observation Generation
 Each agent is given an observation of each tile in the environment, represented as a 3D array. Specifically, at each (x, y) location, there are 26 features representing some information about the state of the world. For instance, the feature 0 indicates if the agent is present at this location, while feature 21 indicates whether there is a soup object at a location.
 
 #+html: <button type="button" class="collapsible" onclick="toggleCollapse(this)">Click for Full List of Features</button>
@@ -272,9 +273,9 @@ For example, here’s a rewrite of the observations function that now defines wh
   }
 #+end_src
 
-Now, when the Overcooked simulator invokes the new observation system, the code is run in parallel across all location-agent pairs of all instances. For a 4x5 Overcooked map, when running a batch of 1000 environments, this is 40,000 parallel invocations of the observationSystem function.
+Now, when the Overcooked simulator invokes the new observation system, the code is run in parallel across all location-agent pairs of all instances. For a 4x5 Overcooked map, when running a batch of 1000 environments, this is 40,000 parallel invocations of the {{{color(#61AFEF,observationSystem)}}} function.
 
-*** Step 3.2: Parallelize Collision Detection
+*** Step 4: Parallelize Collision Detection
 The overcooked simulator must detect collisions between the agents in an environment. To detect if a collision has occurred, the original Overcooked-AI code loops over all pairs of agents, and checks if any pair of agents is trying to move to the same location or have “swapped” spots. If this ever happens, no agent is allowed to move to a new location for that turn, and only the agents’ orientations are updated. Otherwise, both the positions and orientations of all agents are updated. Checking collisions for all pairs can be expensive if an Overcooked environment involves many agents. 
 
 To reduce the cost of collision detection, I moved to an algorithm that takes a constant amount of time per agent by using some additional memory per tile. The algorithm is more advanced in that, unlike the previous examples, it requires the use of fine-grained synchronization (atomics) to prevent race conditions between data-parallel function invocations in the same system, but it significantly reduces the amount of computation performed as the number of agents increases.
@@ -316,7 +317,7 @@ Next, in parallel each agent checks if a collision has occurred. If an agent see
 
 Finally, each agent moves to the new tile if there is no collision, or stays on their original tile if a collision has occurred.
 
-*** Step 3.3: Parallelize Interaction Processing
+*** Step 5: Parallelize Interaction Processing
 Agents in Overcooked have the ability to “interact” with their environment by facing a specific tile and choosing the INTERACT action. For instance, interacting with a pile of onions with an empty hand allows the agent to take an onion, and interacting with cooked soup while holding a plate fills the plate with soup. 
 
 A quirk of the original Overcooked implementation is that it processes the interactions of agents with tiles in the order of their IDs. For instance, if agent 1 has a plate, agent 2 has nothing, and both interact with an empty counter at the same time, it will seem like agent 1 passed the plate to agent 2, because agent 1 will first place down the plate and agent 2 will pick up that plate. However, if the scenario was flipped so that agent 2 has the plate to begin with, it will only seem like agent 2 placed down the plate while agent 1 did nothing. Since we want our simulation to be backwards-compatible with the original game, we need to be careful when parallelizing this process since the order of execution impacts simulation output.
@@ -325,13 +326,13 @@ The key observation is that at most four agents can interact with a single tile 
 
 *** Result of Intra-Environment Parallelism
 
-When there are only two agents, the additional logic introduced by the techniques in steps 3.2 and 3.3 undermine the benefits of parallelizing the interactions over agents. When simulating 1000 environments of the Cramped Room layout, this additional parallelism only brings the steps-per-second from 2 million to 3.5 million.
+When there are only two agents, the additional logic introduced by the techniques in steps 4 and 5 undermine the benefits of parallelizing the interactions over agents. When simulating 1000 environments of the Cramped Room layout, this additional parallelism only brings the steps-per-second from 2 million to 3.5 million.
 
 The real benefit of intra-environment parallelism becomes clearer in layouts with large numbers of agents. When testing on a much larger grid with 30 agents, we find a 10 times increase, going from 7000 to 70,000 steps per second.
 
 
 * Closing Thoughts
-When reflecting on the process of porting Overcooked to Madrona, I feel it was a smoother process when compared to existing alternatives for creating GPU-accelerated environments, like PyTorch, Taichi Lang, or Direct CUDA C++. In particular, I appreciated only needing to think about how to implement a single instance of Overcooked while letting Madrona handle the rest. The ECS design required me to consider how the simulation could be broken down into distinct entities, which encouraged me to re-architect parts of the code that used for-loops.
+When reflecting on the process of porting Overcooked to Madrona, I feel it was a smoother process when compared to existing alternatives for creating GPU-accelerated environments, like PyTorch, Taichi Lang, or Direct CUDA C++. In particular, I appreciated only needing to think about how to implement a single instance of Overcooked while letting Madrona handle the rest. The ECS design required me to consider how the simulation could be broken down into distinct entities, which encouraged me to re-architect parts of the code that ran in serial.
 
 I hope this post inspires you to try implementing your own environments in Madrona. The [[https://github.com/bsarkar321/madrona_rl_envs/tree/main][Madrona RL Environment repo]] contains many examples of standard RL environments, and the general [[https://madrona-engine.github.io/][Madrona Engine homepage]] contains more resources for handling 3D environments.
 
