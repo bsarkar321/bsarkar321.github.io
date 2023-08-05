@@ -37,8 +37,6 @@ samp,
 small,
 strike,
 strong,
-sub,
-sup,
 tt,
 var,
 b,
@@ -318,7 +316,7 @@ pre {
  text-align:center;
  color:lightgray
 }
-.page-container {
+.page-container,#footnotes {
  margin:auto;
  width:110em;
  position:relative
@@ -346,7 +344,7 @@ pre {
  #titlebar,#outline-container-titlebar-head {
      width:80%;
  }
- .page-container {
+ .page-container,#footnotes {
   width:80%
  }
  #nav-pages li,#text-nav-pages-head li {
@@ -498,6 +496,10 @@ b {font-weight:bold;}
 .outline-3 h3 {
     float: left;
     width: 50%;
+}
+
+#outline-container-blog-post > .outline-3 > h3 {
+    width: 100%;
 }
 
 hr {

@@ -36,10 +36,11 @@
 
 
 * Blog Posts
+:PROPERTIES:
+:CUSTOM_ID: blog-post
+:END:
 
-# ** [[file:overcooked_madrona/index.html][Overcooked in Thousands of Kitchens: Training Top Performing Agents in Under a Minute]]
-
-** Coming Soon: Overcooked in Thousands of Kitchens
+** [[file:overcooked_madrona/index.html][Overcooked in Thousands of Kitchens: Training Top Performing Agents in Under a Minute]]
 
 #+html: <hr>
 
