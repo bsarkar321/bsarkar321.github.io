@@ -64,7 +64,7 @@ Brennan Shacklett, Luc Guy Rosenzweig, Zhiqiang Xie, _Bidipta Sarkar_, Andrew Sz
 
 /Transactions on Graphics 2023/
 
-[[https://madrona-engine.github.io/shacklett_siggraph23.pdf][Paper]] / [[https://madrona-engine.github.io][Website]] / [[https://github.com/bsarkar321/madrona_rl_envs][RL Environments]] / Blog (coming soon) / [[https://colab.research.google.com/github/bsarkar321/madrona_rl_envs/blob/master/overcooked_compiled_colab.ipynb][Colab]]
+[[https://madrona-engine.github.io/shacklett_siggraph23.pdf][Paper]] / [[https://madrona-engine.github.io][Website]] / [[https://github.com/bsarkar321/madrona_rl_envs][RL Environments]] / [[../blog/overcooked_madrona/index.html][Blog]] / [[https://colab.research.google.com/github/bsarkar321/madrona_rl_envs/blob/master/overcooked_compiled_colab.ipynb][Colab]]
 #+html: </div>
 
 [[file:../old_reports/madrona.png]]
