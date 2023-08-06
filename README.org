@@ -7,6 +7,7 @@
 #+OPTIONS: email:t toc:nil num:nil html-postamble:nil html-style:nil title:nil \n:t
 #+startup: inlineimages
 
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="home_style.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css"/>
 #+HTML_HEAD: <script src="https://kit.fontawesome.com/1eb1a53221.js" crossorigin="anonymous"></script>
 #+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -24,6 +25,7 @@
 <div id="outline-container-titlebar-head">
 <h2 id="titlebar-head">Bidipta Sarkar</h2>
 <div id="nav-pages">
+<input class="menu-btn" type="checkbox" id="menu-btn" /> <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 <ul class="org-ul">
 
 <li><a href="index.html">Home</a></li>

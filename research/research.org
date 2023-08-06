@@ -8,6 +8,7 @@
 #+startup: inlineimages
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../style.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../home_style.css"/>
 #+HTML_HEAD: <script src="https://kit.fontawesome.com/1eb1a53221.js" crossorigin="anonymous"></script>
 #+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 #+HTML_HEAD: <script src="../common_animations.js"></script>
@@ -27,7 +28,7 @@
  :PROPERTIES:
  :CUSTOM_ID: nav-pages-head
  :END:
-
+#+html: <input class="menu-btn" type="checkbox" id="menu-btn" /> <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 - [[../index.html][Home]]
 - [[../research/index.html][Research]]
 - [[../art/index.html][Art Gallery]]

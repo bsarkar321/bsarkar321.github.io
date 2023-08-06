@@ -1,12 +1,23 @@
+
 .outline-3 {
     position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
     padding: 5px;
+    width: 100%;
 }
 
 .outline-3 img {
+    float: right;
+    width: 40%;
+    max-height: 15em;
+    object-fit: contain;
+    padding: 0.2em;
+    border:2px solid lightgray;
+    margin-bottom: 1em;
+    image-rendering: pixelated;
+    
     transition: opacity 0.3s ease;
     float: none;
 }
@@ -92,4 +103,21 @@
 }
 #text-gallery {
     height: 0;
+}
+
+
+#outline-container-gallery img {
+    width: 100%;
+    max-height: none;
+    image-rendering: auto;
+}
+
+#outline-container-gallery .outline-text-3 {
+    display: flex;
+}
+
+#outline-container-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
 }

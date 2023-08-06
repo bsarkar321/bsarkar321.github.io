@@ -46,7 +46,7 @@
 :PROPERTIES:
 :CUSTOM_ID: nav-pages-head
 :END:
-
+#+html: <input class="menu-btn" type="checkbox" id="menu-btn" /> <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 - [[../../index.html][Home]]
 - [[../../research/index.html][Research]]
 - [[../../art/index.html][Art Gallery]]
@@ -74,7 +74,7 @@ TL;DR: Using the [[https://madrona-engine.github.io/][Madrona Game Engine]], I i
 
 The speed of this simulator opened up new possibilities for conducting extensive hyperparameter sweeps in Overcooked. In particular, it provided me with the opportunity to train numerous policies in the same amount of time it previously took to train a single policy. Since I was able to run more experiments, I was able to find diverse sets of equilibrium policies that represent different “conventions” that Overcooked teams could converge to, about a third of which consistently achieved the maximum possible score.
 
-If you want to try it out, see [[https://github.com/bsarkar321/madrona_rl_envs][this repo]] for the source code and a colab notebook where you can train your own Overcooked agent in minutes and see it play in the original Javascript version of the game.
+If you want to try it out, see [[https://github.com/bsarkar321/madrona_rl_envs/tree/main/src/overcooked_env#overcooked-environment][this repo]] for the source code and a [[https://colab.research.google.com/github/bsarkar321/madrona_rl_envs/blob/master/overcooked_compiled_colab.ipynb][colab notebook]] where you can train your own Overcooked agent in minutes and see it play in the original Javascript version of the game.
 #+end_quote
 
 * RL Implications of High-Performance Simulation

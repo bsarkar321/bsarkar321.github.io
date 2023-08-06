@@ -186,7 +186,7 @@ h3 {
     margin-bottom: 0.5em;
 }
 
-h4 {
+h4:not(#nav-pages-head) {
     color: #434343;
     font-weight: 700;
     font-size: 16pt;
