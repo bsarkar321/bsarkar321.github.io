@@ -17,24 +17,7 @@
 
 #+PROPERTY:  header-args :eval never-export
 
-#+html: <div class="page-container"><div class="topsection">
-
-* Bidipta Sarkar
-  :PROPERTIES:
-  :CUSTOM_ID: titlebar-head
-  :END:
-  
-*** 
- :PROPERTIES:
- :CUSTOM_ID: nav-pages-head
- :END:
-#+html: <input class="menu-btn" type="checkbox" id="menu-btn" /> <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-- [[../index.html][Home]]
-- [[../research/index.html][Research]]
-- [[../art/index.html][Art Gallery]]
-- [[../blog/index.html][Blog]]
-
-#+html: </div></div></div></div><div><div><div><div><div class="content_inner"><section id="home"><div class="container"></div></section></div></div><hr>
+#+INCLUDE: "../titlebar.org"
 
 
 * Blog Posts
@@ -42,7 +25,7 @@
 :CUSTOM_ID: blog-post
 :END:
 
-** [[file:overcooked_madrona/index.html][Overcooked in Thousands of Kitchens: Training Top Performing Agents in Under a Minute]]
+** (August 2023) [[file:overcooked_madrona/index.html][Overcooked in Thousands of Kitchens: Training Top Performing Agents in Under a Minute]]
 
 #+html: <hr>
 

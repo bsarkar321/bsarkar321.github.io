@@ -45,7 +45,9 @@
 #+html: <div class="outline-text-3-inner">
 Jensen Gao, _Bidipta Sarkar_, Fei Xia, Ted Xiao, Jiajun Wu, Brian Ichter, Anirudha Majumdar, Dorsa Sadigh
 
-Under review
+/arXiv, September 2023/
+
+[[https://arxiv.org/abs/2309.02561][Paper]] / [[https://iliad.stanford.edu/pg-vlm/][Website]] / [[https://drive.google.com/file/d/17gbzrJSs8YjVafIrX4omR_rx6qLgXjUd/view][Video]]
 #+html: </div>
 
 [[file:../old_reports/vlm_image.png]]
@@ -55,7 +57,9 @@ Under review
 #+html: <div class="outline-text-3-inner">
 _Bidipta Sarkar_, Andy Shih, Dorsa Sadigh
 
-Under review
+/Conference on Neural Information Processing Systems (NeurIPS), December 2023/
+
+[[https://arxiv.org/abs/2310.15414][Paper]] / [[https://iliad.stanford.edu/Diverse-Conventions/][Website]] / [[https://github.com/Stanford-ILIAD/Diverse-Conventions][Code]]
 #+html: </div>
 
 [[file:../old_reports/XPHandshake.png]]
@@ -78,7 +82,7 @@ _Bidipta Sarkar*_, Aditi Talati*, Andy Shih*, Dorsa Sadigh
 
 /Proceedings of the 36th AAAI Conference on Artificial Intelligence (Demo Track), February 2022/
 
-[[https://arxiv.org/abs/2112.07013][arXiv]] / [[https://github.com/Stanford-ILIAD/PantheonRL][Code]] / [[https://youtu.be/3-Pf3zh_Hpo][Video]] / [[https://doi.org/10.1609/aaai.v36i11.21734][DOI]]
+[[https://arxiv.org/abs/2112.07013][Paper]] / [[https://github.com/Stanford-ILIAD/PantheonRL][Code]] / [[https://youtu.be/3-Pf3zh_Hpo][Video]] / [[https://doi.org/10.1609/aaai.v36i11.21734][DOI]]
 #+html: </div>
 
 [[file:../old_reports/round_robin.png]]

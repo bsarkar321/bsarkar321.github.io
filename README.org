@@ -84,6 +84,8 @@ I am interested in creating AI agents that can interact with their environment a
 
 #+html: </div></section></div></div><hr>
 
+#+INCLUDE: "blog/blog.org::*Blog Posts" :minlevel 1
+
 #+INCLUDE: "research/research.org::*Publications" :minlevel 1
 
 #+html: <hr>
@@ -182,8 +184,6 @@ _Bidipta Sarkar_, Henry Ang
 [[file:old_reports/198.png]]
 
 #+html: <hr>
-
-#+INCLUDE: "blog/blog.org::*Blog Posts" :minlevel 1
 
 #+BEGIN_export html
         <div class="footer">
