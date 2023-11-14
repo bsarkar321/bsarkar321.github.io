@@ -59,7 +59,7 @@ _Bidipta Sarkar_, Andy Shih, Dorsa Sadigh
 
 /Conference on Neural Information Processing Systems (NeurIPS), December 2023/
 
-[[https://arxiv.org/abs/2310.15414][Paper]] / [[https://iliad.stanford.edu/Diverse-Conventions/][Website]] / [[https://github.com/Stanford-ILIAD/Diverse-Conventions][Code]]
+[[https://arxiv.org/abs/2310.15414][Paper]] / [[https://iliad.stanford.edu/Diverse-Conventions/][Website]] / [[https://github.com/Stanford-ILIAD/Diverse-Conventions][Code]] / [[https://youtu.be/wm4f0sdKIUA][Video]]
 #+html: </div>
 
 [[file:../old_reports/XPHandshake.png]]
