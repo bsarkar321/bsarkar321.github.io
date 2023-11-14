@@ -84,7 +84,7 @@ I am interested in creating AI agents that can interact with their environment a
 
 #+html: </div></section></div></div><hr>
 
-#+INCLUDE: "blog/blog.org::*Blog Posts" :minlevel 1
+#+INCLUDE: "blog/blog.org::*Posts" :minlevel 1
 
 #+INCLUDE: "research/research.org::*Publications" :minlevel 1
 
