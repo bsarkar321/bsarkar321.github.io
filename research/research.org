@@ -45,7 +45,7 @@
 #+html: <div class="outline-text-3-inner">
 Jensen Gao, _Bidipta Sarkar_, Fei Xia, Ted Xiao, Jiajun Wu, Brian Ichter, Anirudha Majumdar, Dorsa Sadigh
 
-/arXiv, September 2023/
+/International Conference on Robotics and Automation (ICRA), May 2024/
 
 [[https://arxiv.org/abs/2309.02561][Paper]] / [[https://iliad.stanford.edu/pg-vlm/][Website]] / [[https://drive.google.com/file/d/17gbzrJSs8YjVafIrX4omR_rx6qLgXjUd/view][Video]]
 #+html: </div>
