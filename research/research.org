@@ -19,25 +19,7 @@
 
 #+PROPERTY:  header-args :eval never-export
 
-#+html: <div class="page-container"><div class="topsection">
-
-* Bidipta Sarkar
-  :PROPERTIES:
-  :CUSTOM_ID: titlebar-head
-  :END:
-  
-*** 
- :PROPERTIES:
- :CUSTOM_ID: nav-pages-head
- :END:
-#+html: <input class="menu-btn" type="checkbox" id="menu-btn" /> <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-- [[../index.html][Home]]
-- [[../research/index.html][Research]]
-- [[../art/index.html][Art Gallery]]
-- [[../blog/index.html][Blog]]
-
-#+html: </div></div></div></div><div><div><div><div><div class="content_inner"><section id="home"><div class="container"></div></section></div></div><hr>
-
+#+INCLUDE: "../titlebar.org"
 
 * Publications
 
