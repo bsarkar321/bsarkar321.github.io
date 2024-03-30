@@ -21,19 +21,6 @@
 
 #+INCLUDE: "../titlebar.org"
 
-* Preprints
-
-** An Interactive Agent Foundation Model
-#+html: <div class="outline-text-3-inner">
-Zane Durante*, _Bidipta Sarkar*_, Ran Gong*, Rohan Taori, Yusuke Noda, Paul Tang, Ehsan Adeli, Shrinidhi Kowshika Lakshmikanth, Kevin Schulman, Arnold Milstein, Demetri Terzopoulos, Ade Famoti, Noboru Kuno, Ashley Llorens, Hoi Vo, Katsu Ikeuchi, Li Fei-Fei, Jianfeng Gao, Naoki Wake*, Qiuyuan Huang*
-
-/arXiv, February 2024/
-
-[[https://arxiv.org/abs/2402.05929][Paper]] / [[https://agentfoundationmodel.github.io/][Website]]
-#+html: </div>
-
-[[file:../old_reports/Agentframework.png]]
-
 * Publications
 
 ** Physically Grounded Vision-Language Models for Robotic Manipulation
@@ -81,6 +68,19 @@ _Bidipta Sarkar*_, Aditi Talati*, Andy Shih*, Dorsa Sadigh
 #+html: </div>
 
 [[file:../old_reports/round_robin.png]]
+
+* Preprints
+
+** An Interactive Agent Foundation Model
+#+html: <div class="outline-text-3-inner">
+Zane Durante*, _Bidipta Sarkar*_, Ran Gong*, Rohan Taori, Yusuke Noda, Paul Tang, Ehsan Adeli, Shrinidhi Kowshika Lakshmikanth, Kevin Schulman, Arnold Milstein, Demetri Terzopoulos, Ade Famoti, Noboru Kuno, Ashley Llorens, Hoi Vo, Katsu Ikeuchi, Li Fei-Fei, Jianfeng Gao, Naoki Wake*, Qiuyuan Huang*
+
+/arXiv, February 2024/
+
+[[https://arxiv.org/abs/2402.05929][Paper]] / [[https://agentfoundationmodel.github.io/][Website]]
+#+html: </div>
+
+[[file:../old_reports/Agentframework.png]]
 
 * 
 
