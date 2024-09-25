@@ -4,7 +4,7 @@
 #+description: Bidipta Sarkar's Personal Homepage
 #+KEYWORDS: homepage, website, research, AI, RL, MARL, Vision, Graphics
 #+LANGUAGE:  en
-#+OPTIONS: email:t toc:nil num:nil html-postamble:nil html-style:nil title:nil \n:t
+#+OPTIONS: email:t toc:nil num:nil html-postamble:nil html-style:nil title:nil \n:t broken-links:t
 #+startup: inlineimages
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="home_style.css"/>
@@ -50,7 +50,7 @@
         <div id="nav-icons">
             <ul>
                 
-                    <i><a href="mailto:bidiptas@stanford.edu" class="fa fa-envelope"></a></i>
+                    <i><a href="mailto:bidipta.sarkar@eng.ox.ac.uk" class="fa fa-envelope"></a></i>
                 
                     <i><a href="https://github.com/bsarkar321" class="fa fa-github"></a></i>
                 
@@ -72,7 +72,9 @@
 	  <div class="container">
 #+END_export
 
-I am a senior undergraduate at [[https://cs.stanford.edu][Stanford University]] majoring in computer science (AI track). I've been a member of Professor [[https://dorsa.fyi][Dorsa Sadigh]]'s [[https://iliad.stanford.edu/][ILIAD]] lab since my sophomore year.
+I am a first-year DPhil student in Engineering Science at the [[https://eng.ox.ac.uk/][University of Oxford]] as a member of Professor [[https://www.jakobfoerster.com/][Jakob Foerster]]'s [[https://foersterlab.com/][FLAIR]] lab.
+
+I received my BS in Computer Science at [[https://cs.stanford.edu][Stanford University]] (2020-2024), where I was also a member of Professor [[https://dorsa.fyi][Dorsa Sadigh]]'s [[https://iliad.stanford.edu/][ILIAD]] lab since my sophomore year.
 
 I am interested in creating AI agents that can interact with their environment and safely work alongside humans and other autonomous agents. My research broadly spans three subfields of computer science:
 
@@ -87,6 +89,8 @@ I am interested in creating AI agents that can interact with their environment a
 #+INCLUDE: "blog/blog.org::*Posts" :minlevel 1
 
 #+INCLUDE: "research/research.org::*Publications" :minlevel 1
+
+#+INCLUDE: "research/research.org::*Bachelor's Honors Thesis" :minlevel 1
 
 #+INCLUDE: "research/research.org::*Preprints" :minlevel 1
 
@@ -109,7 +113,7 @@ _Bidipta Sarkar_, Xinyi Wang, Kathy Yu
 
 #+BEGIN_export html
 <p>
-(Won Best Project Poster Award)
+(Best Project Poster Award)
 </p>
 #+END_export
 

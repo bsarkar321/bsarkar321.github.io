@@ -4,7 +4,7 @@
 #+description: Bidipta Sarkar's Personal Homepage
 #+KEYWORDS: homepage, website, research, AI, RL, MARL, Vision, Graphics
 #+LANGUAGE:  en
-#+OPTIONS: email:t toc:nil num:nil html-postamble:nil html-style:nil title:nil \n:t
+#+OPTIONS: email:t toc:nil num:nil html-postamble:nil html-style:nil title:nil \n:t broken-links:t
 #+startup: inlineimages
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../style.css"/>
