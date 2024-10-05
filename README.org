@@ -72,7 +72,7 @@
 	  <div class="container">
 #+END_export
 
-I am a first-year DPhil student in Engineering Science at the [[https://eng.ox.ac.uk/][University of Oxford]] as a member of Professor [[https://www.jakobfoerster.com/][Jakob Foerster]]'s [[https://foersterlab.com/][FLAIR]] lab.
+I am a first-year DPhil student in Engineering Science at the [[https://eng.ox.ac.uk/][University of Oxford]] as a member of Professor [[https://www.jakobfoerster.com/][Jakob Foerster]]'s [[https://foersterlab.com/][FLAIR]] lab. I am funded by the [[https://www.ox.ac.uk/clarendon][Clarendon Fund Scholarship]] in partnership with a Department of Engineering Science Studentship.
 
 I received my BS in Computer Science at [[https://cs.stanford.edu][Stanford University]] (2020-2024), where I was also a member of Professor [[https://dorsa.fyi][Dorsa Sadigh]]'s [[https://iliad.stanford.edu/][ILIAD]] lab since my sophomore year.
 
