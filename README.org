@@ -72,11 +72,11 @@
 	  <div class="container">
 #+END_export
 
-I am a first-year DPhil student in Engineering Science at the [[https://eng.ox.ac.uk/][University of Oxford]] as a member of Professor [[https://www.jakobfoerster.com/][Jakob Foerster]]'s [[https://foersterlab.com/][FLAIR]] lab. I am funded by the [[https://www.ox.ac.uk/clarendon][Clarendon Fund Scholarship]] in partnership with a Department of Engineering Science Studentship.
+I am a first-year DPhil student in Engineering Science at the [[https://eng.ox.ac.uk/][University of Oxford]] in the [[https://foersterlab.com/][FLAIR]] and [[https://whirl.cs.ox.ac.uk/][WhiRL]] labs, co-supervised by Professor [[https://www.jakobfoerster.com/][Jakob Foerster]] and Professor [[https://whirl.cs.ox.ac.uk/pages/people/shimon.html][Shimon Whiteson]]. I am funded by the [[https://www.ox.ac.uk/clarendon][Clarendon Fund Scholarship]] in partnership with a Department of Engineering Science Studentship.
 
-I received my BS in Computer Science at [[https://cs.stanford.edu][Stanford University]] (2020-2024), where I was also a member of Professor [[https://dorsa.fyi][Dorsa Sadigh]]'s [[https://iliad.stanford.edu/][ILIAD]] lab since my sophomore year.
+I received my BS in Computer Science with Honors and Distinction at [[https://cs.stanford.edu][Stanford University]] (2020-2024), where I was also a member of Professor [[https://dorsa.fyi][Dorsa Sadigh]]'s [[https://iliad.stanford.edu/][ILIAD]] lab since my sophomore year.
 
-I am interested in creating AI agents that can interact with their environment and safely work alongside humans and other autonomous agents. My research broadly spans three subfields of computer science:
+I am interested in creating AI agents that can interact with their environment and safely work alongside humans and other autonomous agents, with a growing focus on integrating natural language into AI coordination. My research broadly spans three subfields of computer science:
 
 \bullet Multi-Agent Reinforcement Learning: Enabling independently trained agents to cooperate on a common task and form conventions.
 
