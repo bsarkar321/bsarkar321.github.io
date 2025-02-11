@@ -23,6 +23,19 @@
 
 * Publications
 
+** Training Language Models for Social Deduction with Multi-Agent Reinforcement Learning
+#+html: <div class="outline-text-3-inner">
+_Bidipta Sarkar_, Warren Xia, C. Karen Liu, Dorsa Sadigh
+
+/International Conference on Autonomous Agents and Multiagent Systems (AAMAS), May 2025/
+/Stanford Senior Honors Thesis, May 2024/
+
+[[https://arxiv.org/abs/2502.06060][Paper]] / [[https://doi.org/10.25740/fr666rz8034][Stanford Digital Repository]] / [[https://socialdeductionllm.github.io][Website]] / [[https://github.com/SocialDeductionLLM/SocialDeductionLLM][Code]] / [[https://huggingface.co/collections/bidiptas/social-deduction-llm-aamas-2025-678e24d75e32f9134511125f][Models]]
+#+html: </div>
+
+[[file:../old_reports/AmongUsDiagrams.png]]
+
+
 ** Physically Grounded Vision-Language Models for Robotic Manipulation
 #+html: <div class="outline-text-3-inner">
 Jensen Gao, _Bidipta Sarkar_, Fei Xia, Ted Xiao, Jiajun Wu, Brian Ichter, Anirudha Majumdar, Dorsa Sadigh
@@ -69,18 +82,6 @@ _Bidipta Sarkar*_, Aditi Talati*, Andy Shih*, Dorsa Sadigh
 
 [[file:../old_reports/round_robin.png]]
 
-* Bachelor's Honors Thesis
-
-** Training Language Models for Social Deduction with Multi-Agent Reinforcement Learning
-#+html: <div class="outline-text-3-inner">
-_Bidipta Sarkar_, Warren Xia, C. Karen Liu, Dorsa Sadigh
-
-/Stanford Digital Repository, May 2024/
-
-[[https://doi.org/10.25740/fr666rz8034][Paper]] / [[https://github.com/SocialDeductionLLM][Website]] / [[https://github.com/SocialDeductionLLM][Code]] / [[https://doi.org/10.25740/fr666rz8034][DOI]]
-#+html: </div>
-
-[[file:../old_reports/AmongUsDiagrams.png]]
 
 * Preprints
 

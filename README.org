@@ -90,8 +90,6 @@ I am interested in creating AI agents that can interact with their environment a
 
 #+INCLUDE: "research/research.org::*Publications" :minlevel 1
 
-#+INCLUDE: "research/research.org::*Bachelor's Honors Thesis" :minlevel 1
-
 #+INCLUDE: "research/research.org::*Preprints" :minlevel 1
 
 #+html: <hr>
