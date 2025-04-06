@@ -85,6 +85,19 @@ _Bidipta Sarkar*_, Aditi Talati*, Andy Shih*, Dorsa Sadigh
 
 * Preprints
 
+** LOB-Bench: Benchmarking Generative AI for Finance -- an Application to Limit Order Book Data
+#+html: <div class="outline-text-3-inner">
+Peer Nagy*, Sascha Frey*, Kang Li, _Bidipta Sarkar_, Svitlana Vyetrenko, Stefan Zohren, Ani Calinescu, Jakob Foerster
+
+/arXiv, February 2025/
+
+[[https://arxiv.org/abs/2502.09172][Paper]] / [[https://github.com/peernagy/lob_bench][Code]]
+#+html: </div>
+
+[[file:../old_reports/lobbench_img.png]]
+
+
+
 ** An Interactive Agent Foundation Model
 #+html: <div class="outline-text-3-inner">
 Zane Durante*, _Bidipta Sarkar*_, Ran Gong*, Rohan Taori, Yusuke Noda, Paul Tang, Ehsan Adeli, Shrinidhi Kowshika Lakshmikanth, Kevin Schulman, Arnold Milstein, Demetri Terzopoulos, Ade Famoti, Noboru Kuno, Ashley Llorens, Hoi Vo, Katsu Ikeuchi, Li Fei-Fei, Jianfeng Gao, Naoki Wake*, Qiuyuan Huang*

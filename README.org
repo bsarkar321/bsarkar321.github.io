@@ -171,7 +171,12 @@ _Bidipta Sarkar_, Henry Ang
 
 #+html: <hr>
 
-* Teaching and Outreach
+* Teaching and Service
+
+** Peer Reviewer
+
+ICLR 2025, ICML 2025, ICRA 2025, IEEE RA-L (Oct 2024, April 2025), NeurIPS 2024
+
 
 ** Stanford Center for Teaching and Learning CS Tutor
 
