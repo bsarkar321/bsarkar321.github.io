@@ -23,6 +23,19 @@
 
 * Publications
 
+
+** LOB-Bench: Benchmarking Generative AI for Finance -- an Application to Limit Order Book Data
+#+html: <div class="outline-text-3-inner">
+Peer Nagy*, Sascha Frey*, Kang Li, _Bidipta Sarkar_, Svitlana Vyetrenko, Stefan Zohren, Ani Calinescu, Jakob Foerster
+
+/International Conference on Machine Learning (ICML), July 2025/
+
+[[https://arxiv.org/abs/2502.09172][Paper]] / [[https://github.com/peernagy/lob_bench][Code]]
+#+html: </div>
+
+[[file:../old_reports/lobbench_img.png]]
+
+
 ** Training Language Models for Social Deduction with Multi-Agent Reinforcement Learning
 #+html: <div class="outline-text-3-inner">
 _Bidipta Sarkar_, Warren Xia, C. Karen Liu, Dorsa Sadigh
@@ -84,19 +97,6 @@ _Bidipta Sarkar*_, Aditi Talati*, Andy Shih*, Dorsa Sadigh
 
 
 * Preprints
-
-** LOB-Bench: Benchmarking Generative AI for Finance -- an Application to Limit Order Book Data
-#+html: <div class="outline-text-3-inner">
-Peer Nagy*, Sascha Frey*, Kang Li, _Bidipta Sarkar_, Svitlana Vyetrenko, Stefan Zohren, Ani Calinescu, Jakob Foerster
-
-/arXiv, February 2025/
-
-[[https://arxiv.org/abs/2502.09172][Paper]] / [[https://github.com/peernagy/lob_bench][Code]]
-#+html: </div>
-
-[[file:../old_reports/lobbench_img.png]]
-
-
 
 ** An Interactive Agent Foundation Model
 #+html: <div class="outline-text-3-inner">
