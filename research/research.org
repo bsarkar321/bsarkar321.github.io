@@ -30,7 +30,7 @@ Peer Nagy*, Sascha Frey*, Kang Li, _Bidipta Sarkar_, Svitlana Vyetrenko, Stefan 
 
 /International Conference on Machine Learning (ICML), July 2025/
 
-[[https://arxiv.org/abs/2502.09172][Paper]] / [[https://github.com/peernagy/lob_bench][Code]]
+[[https://arxiv.org/abs/2502.09172][Paper]] / [[https://lobbench.github.io/][Website]] / [[https://github.com/peernagy/lob_bench][Code]]
 #+html: </div>
 
 [[file:../old_reports/lobbench_img.png]]

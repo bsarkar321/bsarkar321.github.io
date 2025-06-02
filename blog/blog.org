@@ -25,6 +25,8 @@
 :CUSTOM_ID: blog-post
 :END:
 
+** (May 2025) [[https://easyacademicwebsite.github.io/][Easy Academic Website Template (With Instructions)]]
+
 ** (November 2023, Video) [[https://youtu.be/wm4f0sdKIUA][My talk on Diverse Conventions for Human-AI Collaboration]]
 
 ** (August 2023, Blog Post) [[file:overcooked_madrona/index.html][Overcooked in Thousands of Kitchens: Training Top Performing Agents in Under a Minute]]
