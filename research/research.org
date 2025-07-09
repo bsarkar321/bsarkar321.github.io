@@ -43,7 +43,7 @@ _Bidipta Sarkar_, Warren Xia, C. Karen Liu, Dorsa Sadigh
 /International Conference on Autonomous Agents and Multiagent Systems (AAMAS), May 2025/
 /Stanford Senior Honors Thesis, May 2024/
 
-[[https://arxiv.org/abs/2502.06060][Paper]] / [[https://doi.org/10.25740/fr666rz8034][Stanford Digital Repository]] / [[https://socialdeductionllm.github.io][Website]] / [[https://github.com/SocialDeductionLLM/SocialDeductionLLM][Code]] / [[https://huggingface.co/collections/bidiptas/social-deduction-llm-aamas-2025-678e24d75e32f9134511125f][Models]] / [[file:~/Desktop/iCloudDrive/personal_website/old_reports/Bidipta_SocialDeduction_Poster.pdf][Poster]]
+[[https://arxiv.org/abs/2502.06060][Paper]] / [[https://doi.org/10.25740/fr666rz8034][Stanford Digital Repository]] / [[https://socialdeductionllm.github.io][Website]] / [[https://github.com/SocialDeductionLLM/SocialDeductionLLM][Code]] / [[https://huggingface.co/collections/bidiptas/social-deduction-llm-aamas-2025-678e24d75e32f9134511125f][Models]] / [[file:../old_reports/Bidipta_SocialDeduction_Poster.pdf][Poster]]
 #+html: </div>
 
 [[file:../old_reports/AmongUsDiagrams.png]]
@@ -67,7 +67,7 @@ _Bidipta Sarkar_, Andy Shih, Dorsa Sadigh
 
 /Conference on Neural Information Processing Systems (NeurIPS), December 2023/
 
-[[https://arxiv.org/abs/2310.15414][Paper]] / [[https://iliad.stanford.edu/Diverse-Conventions/][Website]] / [[https://github.com/Stanford-ILIAD/Diverse-Conventions][Code]] / [[https://youtu.be/wm4f0sdKIUA][Video]] / [[file:~/Desktop/iCloudDrive/personal_website/old_reports/Bidipta_DiverseConventions_Poster.pdf][Poster]]
+[[https://arxiv.org/abs/2310.15414][Paper]] / [[https://iliad.stanford.edu/Diverse-Conventions/][Website]] / [[https://github.com/Stanford-ILIAD/Diverse-Conventions][Code]] / [[https://youtu.be/wm4f0sdKIUA][Video]] / [[file:../old_reports/Bidipta_DiverseConventions_Poster.pdf][Poster]]
 #+html: </div>
 
 [[file:../old_reports/XPHandshake.png]]
@@ -79,7 +79,7 @@ Brennan Shacklett, Luc Guy Rosenzweig, Zhiqiang Xie, _Bidipta Sarkar_, Andrew Sz
 
 /Transactions on Graphics 2023/
 
-[[https://madrona-engine.github.io/shacklett_siggraph23.pdf][Paper]] / [[https://madrona-engine.github.io][Website]] / [[https://github.com/bsarkar321/madrona_rl_envs][RL Environments]] / [[file:~/Desktop/iCloudDrive/personal_website/blog/overcooked_madrona/index.html][Blog]] / [[https://colab.research.google.com/github/bsarkar321/madrona_rl_envs/blob/master/overcooked_compiled_colab.ipynb][Colab]]
+[[https://madrona-engine.github.io/shacklett_siggraph23.pdf][Paper]] / [[https://madrona-engine.github.io][Website]] / [[https://github.com/bsarkar321/madrona_rl_envs][RL Environments]] / [[file:../blog/overcooked_madrona/index.html][Blog]] / [[https://colab.research.google.com/github/bsarkar321/madrona_rl_envs/blob/master/overcooked_compiled_colab.ipynb][Colab]]
 #+html: </div>
 
 [[file:../old_reports/madrona.png]]
@@ -90,7 +90,7 @@ _Bidipta Sarkar*_, Aditi Talati*, Andy Shih*, Dorsa Sadigh
 
 /Proceedings of the 36th AAAI Conference on Artificial Intelligence (Demo Track), February 2022/
 
-[[https://arxiv.org/abs/2112.07013][Paper]] / [[https://github.com/Stanford-ILIAD/PantheonRL][Code]] / [[https://youtu.be/3-Pf3zh_Hpo][Video]] / [[https://doi.org/10.1609/aaai.v36i11.21734][DOI]] / [[file:~/Desktop/iCloudDrive/personal_website/old_reports/Bidipta_PantheonRL_Poster.pdf][Poster]]
+[[https://arxiv.org/abs/2112.07013][Paper]] / [[https://github.com/Stanford-ILIAD/PantheonRL][Code]] / [[https://youtu.be/3-Pf3zh_Hpo][Video]] / [[https://doi.org/10.1609/aaai.v36i11.21734][DOI]] / [[file:../old_reports/Bidipta_PantheonRL_Poster.pdf][Poster]]
 #+html: </div>
 
 [[file:../old_reports/round_robin.png]]
