@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-11-06 Thu 18:21 -->
+<!-- 2025-11-06 Thu 18:25 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Evolution Strategies at the Hyperscale</title>
@@ -87,9 +87,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orga5dcef3" class="outline-2">
-<h2 id="orga5dcef3"><b>Evolution Strategies at the Hyperscale</b></h2>
-<div class="outline-text-2" id="text-orga5dcef3">
+<div id="outline-container-org3cccbdb" class="outline-2">
+<h2 id="org3cccbdb"><b>Evolution Strategies at the Hyperscale</b></h2>
+<div class="outline-text-2" id="text-org3cccbdb">
 <p class="c48">General ML Training Made as Fast and Easy as Inference</p>
 
 <p>
@@ -140,9 +140,9 @@ This is an early research checkpoint of our work. We will continue iterating on 
 </blockquote>
 </div>
 </div>
-<div id="outline-container-orga16a133" class="outline-2">
-<h2 id="orga16a133">What is EGGROLL</h2>
-<div class="outline-text-2" id="text-orga16a133">
+<div id="outline-container-org83f8fff" class="outline-2">
+<h2 id="org83f8fff">What is EGGROLL</h2>
+<div class="outline-text-2" id="text-org83f8fff">
 <p><b>EGGROLL</b> stands for <b>E</b>volution <b>G</b>uided <b>G</b>roup <b>R</b>elative <b>O</b>nline <b>L</b>ow-rank <b>L</b>earning.</p>
 
 <p>
@@ -208,17 +208,17 @@ Note that although individual perturbations are low-rank, the expression on the 
 </p>
 </div>
 </div>
-<div id="outline-container-orgcf6149d" class="outline-2">
-<h2 id="orgcf6149d">Tabula Rasa Environment Learning</h2>
-<div class="outline-text-2" id="text-orgcf6149d">
+<div id="outline-container-org83982b0" class="outline-2">
+<h2 id="org83982b0">Tabula Rasa Environment Learning</h2>
+<div class="outline-text-2" id="text-org83982b0">
 <p>
 Evolution Strategies have historically been used as an alternative to reinforcement learning methods, due to its easy scalability on CPU clusters, as done in <a href="https://arxiv.org/abs/1703.03864">OpenAI's Evolution Strategies paper</a>. To demonstrate that the low-rank update does not compromise the performance of ES on these settings, we run experiments on [insert environments here].<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org089bc2f" class="outline-2">
-<h2 id="org089bc2f">LLM Reasoning</h2>
-<div class="outline-text-2" id="text-org089bc2f">
+<div id="outline-container-org4d89bbd" class="outline-2">
+<h2 id="org4d89bbd">LLM Reasoning</h2>
+<div class="outline-text-2" id="text-org4d89bbd">
 <p>
 To highlight the scalability of our method, we do standard LLM "reasoning" training on the RWKV-7 language models.<br />
 </p>
@@ -241,7 +241,7 @@ We are actively working on a vLLM and Megatron port with advisors from NVIDIA, w
 <p>
 We first test our method on the countdown task to compare against the core results of the concurrent paper on <a href="https://arxiv.org/abs/2509.24372">ES with LLMs</a>. On the RWKV 1.5B model, we outperform the DR GRPO baseline, landing between the reported results of LLaMA-3.2 1B and Qwen 2.5 1.5B:<br />
 </p>
-<img src="https://bsarkar321.github.io/blog/hyperscale_es/countdown_small.pdf" style="width:80%;image-rendering:auto;">
+<img src="countdown_small.png" style="width:80%;image-rendering:auto;">
 
 <p>
 For the 7B model, we outperform all reported results from the other paper<sup><a id="fnr.grpocountdown" class="footref" href="#fn.grpocountdown" role="doc-backlink">4</a></sup>:<br />
@@ -253,9 +253,9 @@ We also test our model on math benchmarks, namely GSM8K and AIME. [TODO]<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org3f5fcd8" class="outline-2">
-<h2 id="org3f5fcd8">Pure Integer Pretraining</h2>
-<div class="outline-text-2" id="text-org3f5fcd8">
+<div id="outline-container-orga54092a" class="outline-2">
+<h2 id="orga54092a">Pure Integer Pretraining</h2>
+<div class="outline-text-2" id="text-orga54092a">
 <p>
 To highlight the potential of EGGROLL for training beyond gradient-based methods, we built a new language model architecture designed for fast inference that can work across a variety of accelerators. Some of the design decision include:<br />
 </p>
@@ -284,9 +284,9 @@ With 3.2 GB of data<sup><a id="fnr.6" class="footref" href="#fn.6" role="doc-bac
 </p>
 </div>
 </div>
-<div id="outline-container-orgc85a91a" class="outline-2">
-<h2 id="orgc85a91a"></h2>
-<div class="outline-text-2" id="text-orgc85a91a">
+<div id="outline-container-orgd1f85c0" class="outline-2">
+<h2 id="orgd1f85c0"></h2>
+<div class="outline-text-2" id="text-orgd1f85c0">
 </div><div><div class="footer"><p id="copyright">&copy; 2023 Bidipta Sarkar</p></div></div>
 </div>
 </div>

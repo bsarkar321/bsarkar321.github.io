@@ -150,7 +150,7 @@ We are actively working on a vLLM and Megatron port with advisors from NVIDIA, w
 #+html: </div>
 
 We first test our method on the countdown task to compare against the core results of the concurrent paper on [[https://arxiv.org/abs/2509.24372][ES with LLMs]]. On the RWKV 1.5B model, we outperform the DR GRPO baseline, landing between the reported results of LLaMA-3.2 1B and Qwen 2.5 1.5B:
-#+html: <img src="https://bsarkar321.github.io/blog/hyperscale_es/countdown_small.pdf" style="width:80%;image-rendering:auto;">
+#+html: <img src="countdown_small.png" style="width:80%;image-rendering:auto;">
 
 For the 7B model, we outperform all reported results from the other paper[fn:grpocountdown]:
 #+html: <img src="countdown_large.png" style="width:80%;image-rendering:auto;">
