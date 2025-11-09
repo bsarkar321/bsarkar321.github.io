@@ -7,11 +7,11 @@
 #+OPTIONS: email:t toc:nil num:nil html-postamble:nil html-style:nil title:nil \n:t broken-links:t
 #+startup: inlineimages
 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../style.css"/>
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../bformat.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./style.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./bformat.css"/>
 #+HTML_HEAD: <script src="https://kit.fontawesome.com/1eb1a53221.js" crossorigin="anonymous"></script>
 #+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-#+HTML_HEAD: <script src="../../common_animations.js"></script>
+# #+HTML_HEAD: <script src="../../common_animations.js"></script>
 #+HTML_HEAD: <link rel="icon" type="image/x-icon" href="../../favicon.ico">
 
 #+MACRO: color @@html:<font style="font-family: monospace;" color="$1">$2</font>@@
@@ -20,7 +20,7 @@
 
 #+PROPERTY:  header-args :eval never-export
 
-#+html: <div class="page-container"><div class="topsection">
+#+html: <div class="page-container">
 
 #+BEGIN_export html
 <script>
@@ -39,25 +39,12 @@
 </script>
 #+END_export
 
-* Bidipta Sarkar
-:PROPERTIES:
-:CUSTOM_ID: titlebar-head
-:END:
-  
-*** 
-:PROPERTIES:
-:CUSTOM_ID: nav-pages-head
-:END:
-#+html: <input class="menu-btn" type="checkbox" id="menu-btn" /> <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-- [[../../index.html][Home]]
-- [[../../research/index.html][Research]]
-- [[../../art/index.html][Art Gallery]]
-- [[../../blog/index.html][Blog]]
 
-#+html: </div></div></div></div><div><div><div><div><div class="content_inner"><section id="home"><div class="container"></div></section></div></div><hr>
+
+#+html: <div><div><div><div><div class="content_inner"><section id="home"></section></div></div>
 
 * *Evolution Strategies at the Hyperscale*
-#+html: <p class="c48">General ML Training Made as Fast and Easy as Inference</p>
+#+html: <p class="c48">General ML Training Made as Fast and Easy as Inference</p><hr>
 
 /Written by: [[https://bsarkar321.github.io/][Bidipta Sarkar]]/
 /Edited by: TODO/
@@ -162,7 +149,7 @@ We also test our model on math benchmarks, namely GSM8K and AIME. [TODO]
 To highlight the potential of EGGROLL for training beyond gradient-based methods, we built a new language model architecture designed for fast inference that can work across a variety of accelerators. Some of the design decision include:
 #+html: <div class="step2bullets">
 - Storing all weights and performing all matrix multiplications in int8, as this is the fastest supported datatype on [[https://www.nvidia.com/en-gb/data-center/h100/][H100s]]. 
-- Never casting to floating point, because keeping all operations in integer formats can enable simpler accelerators. Our model only conducts int8 matrix multiplications (with int32 accumulate) and integer vector addition, multiplication, clipping, bitwise manipulations, and division[fn:4]. In fact, even our fitness calculation of the log likelihood of generation is done in int32 and precalculated lookup tables. Although prior work like [[https://arxiv.org/abs/2310.11453][BitNet]] does quantization-aware training, we are not aware of prior work to keep the entire training process in int formats.
+- Never casting to floating point, because keeping all operations in integer formats can enable simpler accelerators. Our model only conducts int8 matrix multiplications (with int32 accumulate) and integer vector addition, multiplication, clipping, and bitwise manipulations. In fact, even our fitness calculation of the log likelihood of generation is done in int32 and precalculated lookup tables. Although prior work like [[https://arxiv.org/abs/2310.11453][BitNet]] does quantization-aware training, we are not aware of prior work to keep the entire training process in int formats.
 - We use a fully quantized variant of [[https://arxiv.org/abs/1701.03452][minGRU]] instead of self-attention or linear attention to demonstrate that sequence-parallelism is not needed for evolution, just a very large batch size to process individual tokens in parallel. With evolution, we can optimize for any sequence length without increasing memory requirements and take multiple updates within a single sequence using [[https://arxiv.org/abs/2304.12180v2][Noise-Reuse ES]].
 #+html: </div>
 
@@ -181,13 +168,12 @@ With 3.2 GB of data[fn:5], we get a loss of around 4 bits/byte in 25 mins on one
 [fn:1] Our first public github commit of an early version of EGGROLL is [[https://github.com/bsarkar321/jaxrwkv/commit/6d92566eacc2c8c12a946b3e2a3d832dbc1e63fe][here]], on Aug 13.
 [fn:2] The concurrent work on [[https://arxiv.org/abs/2509.24372][ES on LLMs]] avoided this issue by having a very small population size, rolling out hundreds of samples for each member of the population to get a better fitness estimate and running a small number of population members on the GPU at any one time, turning the batched matrix multiplication back into regular matrix multiplication. However, we would like to have the flexibility to choose between having multiple rollouts per population member versus having more population members overall.
 [fn:3] The theory claims that this is the gradient estimate at the limit as rank increases, and we empirically find that this continues to be strong even at rank 1.
-[fn:4] We cheat a bit in practice, since vector integer division is incredibly slow at int32 on GPUs, so we do float32 division before casting back to int32. Final perplexity is actually better when using int32 divisions, but it is 2x slower overall so we allow this one cheat due to hardware compatibility. General purpose integer division is only used in the layernorms (which we found very helpful for training), so we are testing ways to bypass the slow integer division.
 [fn:5] The amount of unique data is actually 1.6 GB due to antithetical sampling.
 [fn:grpocountdown] Our GRPO training is too slow to get reasonable results for the 7B RWKV model, since we have not incorporated cuda kernels yet. However, this is on the roadmap to give a fair comparison.
 
 * 
 
-#+html: </div><div><div class="footer"><p id="copyright">&copy; 2023 Bidipta Sarkar</p></div></div>
+#+html: </div><div><div class="footer"><p id="copyright">&copy; 2025 Bidipta Sarkar</p></div></div>
 
 # Local Variables:
 # eval: (add-hook 'after-save-hook (lambda nil (when (y-or-n-p "Tangle?") (org-html-export-to-html))) nil t)
