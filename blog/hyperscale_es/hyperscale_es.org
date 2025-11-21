@@ -110,7 +110,7 @@ In the limit as rank increases[fn:3], the "gradient" estimate just standard ES w
 
 $$ \nabla_{\theta}\mathbb{E}_{\epsilon_1, \epsilon_2 \sim N(0,I_{d})} F(\theta+\sigma\epsilon_2 \epsilon_1^T) = \frac{1}{\sigma}\mathbb{E}_{\epsilon_1,\epsilon_2\sim N(0,I_{d})}\{F(\theta+\sigma\epsilon_2 \epsilon_1^T)\epsilon_2 \epsilon_1^T\} $$
 
-Note that although individual perturbations are low-rank, the expression on the right side is actually high-rank, due to the properties of sums of low-rank matrices. We directly fuse this high rank update into the parameters at each update step, which is why we refer to this as *Online Low-rank Learning*. In comparison, using ES to directly optimize LoRA matrices will still be restricted to a low-rank perturbation, which may be [[https://thinkingmachines.ai/blog/lora/][enough for LLM reasoning]] but not sufficient for pretraining or supervised fine-tuning.
+Note that although individual perturbations are low-rank, the expression on the right side is actually high-rank, due to the properties of sums of low-rank matrices. We directly fuse this high rank update into the parameters at each update step. In comparison, using ES to directly optimize LoRA matrices will still be restricted to a low-rank perturbation, which may be [[https://thinkingmachines.ai/blog/lora/][enough for LLM reasoning]] but not sufficient for pretraining or supervised fine-tuning.
 
 * Training an EGG: Pure Integer Pretraining of a Nonlinear RNN with No Activation Functions
 
@@ -126,9 +126,9 @@ To highlight the strength and flexibility of EGGROLL, we wanted to demonstrate t
 
 To optimize EGG with EGGROLL, we keep the core infrastructure, but we make slight modifications to the optimization process. In particular, instead of taking arbitrarily large updates, we check if the update is larger than some threshold before pushing it one step in that direction. We do not use any dedicated optimizer states, like momentum, but this would be an interesting future direction.
 
-To test our architecture and method, we trained a small D256-L6 parameter model to perform character-level language modeling on the [[https://huggingface.co/datasets/JeanKaddour/minipile][MiniPile]] dataset, feeding 100 bytes per population member per update step, achieving 10 million tokens per second on a single H100. Our final loss curves are in the header figure of this blog post. We see that an 8 times larger population size results in a drop in loss of 0.4 bits/byte, achieving the best test loss of 3.41 bits/byte. Note that the population size we use is $2^{18}=262144$, which is *two orders of magnitude larger* than population size used in [[https://arxiv.org/abs/1703.03864][OpenAI's ES work]].
+To test our architecture and method, we trained a small D256-L6 parameter model to perform character-level language modeling on the [[https://huggingface.co/datasets/JeanKaddour/minipile][MiniPile]] dataset, feeding 100 tokens per population member per update step, achieving 10 million tokens per second on a single H100. Our final loss curves are in the header figure of this blog post. We see that an 8 times larger population size results in a drop in loss of 0.4 bits/byte, where the largest population size achieves a test loss of 3.41 bits/byte. Note that the population size we use is $2^{18}=262144$, which is *two orders of magnitude larger* than population size used in [[https://arxiv.org/abs/1703.03864][OpenAI's ES work]].
 
-We also see that ES can be quite data efficient. In particular, if each training sequence is shared among 512 members of the population (solid lines in the figure below), we get similar performance to only sharing among pairs (dashed lines) when the population size is large enough.
+We also see that ES can be very data efficient. In particular, if each training sequence is shared among 512 members of the population (solid lines in the figure below), we get similar performance to only sharing among pairs (dashed lines) when the population size is large enough.
 
 #+html: <img src="data_efficient_pretrain_loss.png" style="width:100%;image-rendering:auto;">
 
@@ -159,9 +159,9 @@ We also train our model on GSM8K and find that we outperform GRPO:
 
 * Next Steps
 
-We are actively working on testing EGGROLL on more reasoning tasks and other potential language model architectures. We are particularly interested in the end-to-end optimization of /neurosymbolic systems/, since EGGROLL naturally handles nondifferentiable components within a model.
+We are actively working on testing EGGROLL on more reasoning tasks and other potential language model architectures. We are particularly interested in the end-to-end optimization of /neurosymbolic systems/, since EGGROLL naturally handles nondifferentiable components within a model. Specifically, we think that EGGROLL has strong potential to optimize discrete memory systems like the [[https://x.com/BlinkDL_AI/status/1976912771985146184][ROSA architecture for RWKV-8]] or directly optimize LLMs with multi-agent awareness, breaking the [[https://limit-of-rlvr.github.io/][best-of-k curse of RL]].
 
-If you have any questions, feel free to reach out on our [[https://www.alphaxiv.org/abs/2511.16652][alphaxiv discussion page]] or opening issues on our [[https://github.com/ESHyperscale/HyperscaleES][github repo]].
+If you have any questions, feel free to reach out on our [[https://www.alphaxiv.org/abs/2511.16652][alphaxiv discussion page]] or open issues on our [[https://github.com/ESHyperscale/HyperscaleES][github repo]].
 
 * Footnotes
 

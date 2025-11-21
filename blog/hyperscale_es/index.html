@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-11-21 Fri 13:16 -->
+<!-- 2025-11-21 Fri 14:19 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Evolution Strategies at the Hyperscale</title>
@@ -71,9 +71,9 @@
 
 
 <div><div><div><div><div class="content_inner"><section id="home"></section></div></div>
-<div id="outline-container-org2916cfc" class="outline-2">
-<h2 id="org2916cfc"><b>Evolution Strategies at the Hyperscale</b></h2>
-<div class="outline-text-2" id="text-org2916cfc">
+<div id="outline-container-org921a696" class="outline-2">
+<h2 id="org921a696"><b>Evolution Strategies at the Hyperscale</b></h2>
+<div class="outline-text-2" id="text-org921a696">
 <p class="c48">General ML Training Made as Fast and Easy as Inference</p><hr>
 
 <p>
@@ -110,9 +110,9 @@ This is an early research checkpoint of our work. We will continue iterating on 
 </p>
 </div>
 </div>
-<div id="outline-container-orgf37ca9d" class="outline-2">
-<h2 id="orgf37ca9d">What is EGGROLL</h2>
-<div class="outline-text-2" id="text-orgf37ca9d">
+<div id="outline-container-org23676ba" class="outline-2">
+<h2 id="org23676ba">What is EGGROLL</h2>
+<div class="outline-text-2" id="text-org23676ba">
 <p><b>EGGROLL</b> stands for <b>E</b>volution <b>G</b>uided <b>G</b>ene<b>r</b>al <b>O</b>ptimization via <b>L</b>ow-rank <b>L</b>earning. The method is illustrated in the figure below</p>
 
 <img src="diagram.png" style="width:100%;image-rendering:auto;">
@@ -176,13 +176,13 @@ In the limit as rank increases<sup><a id="fnr.3" class="footref" href="#fn.3" ro
 </p>
 
 <p>
-Note that although individual perturbations are low-rank, the expression on the right side is actually high-rank, due to the properties of sums of low-rank matrices. We directly fuse this high rank update into the parameters at each update step, which is why we refer to this as <b>Online Low-rank Learning</b>. In comparison, using ES to directly optimize LoRA matrices will still be restricted to a low-rank perturbation, which may be <a href="https://thinkingmachines.ai/blog/lora/">enough for LLM reasoning</a> but not sufficient for pretraining or supervised fine-tuning.<br />
+Note that although individual perturbations are low-rank, the expression on the right side is actually high-rank, due to the properties of sums of low-rank matrices. We directly fuse this high rank update into the parameters at each update step. In comparison, using ES to directly optimize LoRA matrices will still be restricted to a low-rank perturbation, which may be <a href="https://thinkingmachines.ai/blog/lora/">enough for LLM reasoning</a> but not sufficient for pretraining or supervised fine-tuning.<br />
 </p>
 </div>
 </div>
-<div id="outline-container-orgcd91180" class="outline-2">
-<h2 id="orgcd91180">Training an EGG: Pure Integer Pretraining of a Nonlinear RNN with No Activation Functions</h2>
-<div class="outline-text-2" id="text-orgcd91180">
+<div id="outline-container-org25bab55" class="outline-2">
+<h2 id="org25bab55">Training an EGG: Pure Integer Pretraining of a Nonlinear RNN with No Activation Functions</h2>
+<div class="outline-text-2" id="text-org25bab55">
 <p>
 To highlight the strength and flexibility of EGGROLL, we wanted to demonstrate that it can be used for training architectures that would previously be impractical or extremely difficult with typical backprop. We therefore work under the following constraints:<br />
 </p>
@@ -206,11 +206,11 @@ To optimize EGG with EGGROLL, we keep the core infrastructure, but we make sligh
 </p>
 
 <p>
-To test our architecture and method, we trained a small D256-L6 parameter model to perform character-level language modeling on the <a href="https://huggingface.co/datasets/JeanKaddour/minipile">MiniPile</a> dataset, feeding 100 bytes per population member per update step, achieving 10 million tokens per second on a single H100. Our final loss curves are in the header figure of this blog post. We see that an 8 times larger population size results in a drop in loss of 0.4 bits/byte, achieving the best test loss of 3.41 bits/byte. Note that the population size we use is \(2^{18}=262144\), which is <b>two orders of magnitude larger</b> than population size used in <a href="https://arxiv.org/abs/1703.03864">OpenAI's ES work</a>.<br />
+To test our architecture and method, we trained a small D256-L6 parameter model to perform character-level language modeling on the <a href="https://huggingface.co/datasets/JeanKaddour/minipile">MiniPile</a> dataset, feeding 100 tokens per population member per update step, achieving 10 million tokens per second on a single H100. Our final loss curves are in the header figure of this blog post. We see that an 8 times larger population size results in a drop in loss of 0.4 bits/byte, where the largest population size achieves a test loss of 3.41 bits/byte. Note that the population size we use is \(2^{18}=262144\), which is <b>two orders of magnitude larger</b> than population size used in <a href="https://arxiv.org/abs/1703.03864">OpenAI's ES work</a>.<br />
 </p>
 
 <p>
-We also see that ES can be quite data efficient. In particular, if each training sequence is shared among 512 members of the population (solid lines in the figure below), we get similar performance to only sharing among pairs (dashed lines) when the population size is large enough.<br />
+We also see that ES can be very data efficient. In particular, if each training sequence is shared among 512 members of the population (solid lines in the figure below), we get similar performance to only sharing among pairs (dashed lines) when the population size is large enough.<br />
 </p>
 
 <img src="data_efficient_pretrain_loss.png" style="width:100%;image-rendering:auto;">
@@ -220,9 +220,9 @@ We are actively working on scaling up training to larger population sizes and te
 </p>
 </div>
 </div>
-<div id="outline-container-orgbe2a414" class="outline-2">
-<h2 id="orgbe2a414">LLM Reasoning</h2>
-<div class="outline-text-2" id="text-orgbe2a414">
+<div id="outline-container-orgccfe51c" class="outline-2">
+<h2 id="orgccfe51c">LLM Reasoning</h2>
+<div class="outline-text-2" id="text-orgccfe51c">
 <p>
 In addition to our EGG model, we find that EGGROLL is a generally strong method for LLM fine-tuning. In particular, to highlight the scalability of our method, we do standard LLM "reasoning" training on the RWKV-7 language models with billions of parameters.<br />
 </p>
@@ -258,21 +258,21 @@ We also train our model on GSM8K and find that we outperform GRPO:<br />
 <img src="gsm8k_medium.png" style="width:80%;image-rendering:auto;">
 </div>
 </div>
-<div id="outline-container-org7e2bd48" class="outline-2">
-<h2 id="org7e2bd48">Next Steps</h2>
-<div class="outline-text-2" id="text-org7e2bd48">
+<div id="outline-container-org96b3fd1" class="outline-2">
+<h2 id="org96b3fd1">Next Steps</h2>
+<div class="outline-text-2" id="text-org96b3fd1">
 <p>
-We are actively working on testing EGGROLL on more reasoning tasks and other potential language model architectures. We are particularly interested in the end-to-end optimization of <i>neurosymbolic systems</i>, since EGGROLL naturally handles nondifferentiable components within a model.<br />
+We are actively working on testing EGGROLL on more reasoning tasks and other potential language model architectures. We are particularly interested in the end-to-end optimization of <i>neurosymbolic systems</i>, since EGGROLL naturally handles nondifferentiable components within a model. Specifically, we think that EGGROLL has strong potential to optimize discrete memory systems like the <a href="https://x.com/BlinkDL_AI/status/1976912771985146184">ROSA architecture for RWKV-8</a> or directly optimize LLMs with multi-agent awareness, breaking the <a href="https://limit-of-rlvr.github.io/">best-of-k curse of RL</a>.<br />
 </p>
 
 <p>
-If you have any questions, feel free to reach out on our <a href="https://www.alphaxiv.org/abs/2511.16652">alphaxiv discussion page</a> or opening issues on our <a href="https://github.com/ESHyperscale/HyperscaleES">github repo</a>.<br />
+If you have any questions, feel free to reach out on our <a href="https://www.alphaxiv.org/abs/2511.16652">alphaxiv discussion page</a> or open issues on our <a href="https://github.com/ESHyperscale/HyperscaleES">github repo</a>.<br />
 </p>
 </div>
 </div>
-<div id="outline-container-orgaa0291f" class="outline-2">
-<h2 id="orgaa0291f"></h2>
-<div class="outline-text-2" id="text-orgaa0291f">
+<div id="outline-container-orgf30cdce" class="outline-2">
+<h2 id="orgf30cdce"></h2>
+<div class="outline-text-2" id="text-orgf30cdce">
 </div><div><div class="footer"><p id="copyright">&copy; 2025 Bidipta Sarkar</p></div></div>
 </div>
 </div>
