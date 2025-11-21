@@ -23,6 +23,30 @@
 
 * Publications
 
+** Evolution Strategies at the Hyperscale
+#+html: <div class="outline-text-3-inner">
+_Bidipta Sarkar*_, Mattie Fellows*, Juan Agustin Duque*, Alistair Letcher$^\dagger$, Antonio León Villares$^\dagger$, Anya Sims$^\dagger$, Dylan Cope$^\dagger$, Jarek Liesen$^\dagger$, Lukas Seier$^\dagger$, Theo Wolf$^\dagger$, Uljad Berdica$^\dagger$, Alexander David Goldie, Aaron Courville, Karin Sevegnani, Shimon Whiteson*, Jakob Nicolaus Foerster*
+
+/arXiv preprint, November 2025/
+
+[[https://arxiv.org/abs/2511.16652][Paper]] / [[https://eshyperscale.github.io/][Website]] / [[https://github.com/ESHyperscale/HyperscaleES][Code]] / [[https://github.com/ESHyperscale/nano-egg][Nano-EGG Code]]
+
+#+html: </div>
+
+
+[[file:../blog/hyperscale_es/diagram.png]]
+
+
+** Discrete Flow Matching is a Surprisingly Effective Post-training Method to Address Compound Error in Autoregressive Models
+
+#+html: <div class="outline-text-3-inner">
+Kang Li*, _Bidipta Sarkar*_, _Zheng Xiong_, Sascha Frey, Zilin Wang, Frensi Zejnullahu, Alfred Backhouse, Stefan Zohren, Anisoara Calinescu, Mihai Cucuringu$^\dagger$, Jakob Foerster$^\dagger$
+
+/ACM International Conference on AI in Finance *(Oral)*, November 2025/
+
+[[https://dl.acm.org/doi/pdf/10.1145/3768292.3770442][Paper]]
+
+#+html: </div>
 
 ** LOB-Bench: Benchmarking Generative AI for Finance -- an Application to Limit Order Book Data
 #+html: <div class="outline-text-3-inner">
@@ -40,7 +64,7 @@ Peer Nagy*, Sascha Frey*, Kang Li, _Bidipta Sarkar_, Svitlana Vyetrenko, Stefan 
 #+html: <div class="outline-text-3-inner">
 _Bidipta Sarkar_, Warren Xia, C. Karen Liu, Dorsa Sadigh
 
-/International Conference on Autonomous Agents and Multiagent Systems (AAMAS), May 2025/
+/International Conference on Autonomous Agents and Multiagent Systems (AAMAS) *(Oral)*, May 2025/
 /Stanford Senior Honors Thesis, May 2024/
 
 [[https://arxiv.org/abs/2502.06060][Paper]] / [[https://doi.org/10.25740/fr666rz8034][Stanford Digital Repository]] / [[https://socialdeductionllm.github.io][Website]] / [[https://github.com/SocialDeductionLLM/SocialDeductionLLM][Code]] / [[https://huggingface.co/collections/bidiptas/social-deduction-llm-aamas-2025-678e24d75e32f9134511125f][Models]] / [[file:../old_reports/Bidipta_SocialDeduction_Poster.pdf][Poster]]
