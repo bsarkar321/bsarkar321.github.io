@@ -40,7 +40,7 @@ _Bidipta Sarkar*_, Mattie Fellows*, Juan Agustin Duque*, Alistair Letcher$^\dagg
 ** Discrete Flow Matching is a Surprisingly Effective Post-training Method to Address Compound Error in Autoregressive Models
 
 #+html: <div class="outline-text-3-inner">
-Kang Li*, _Bidipta Sarkar*_, _Zheng Xiong_, Sascha Frey, Zilin Wang, Frensi Zejnullahu, Alfred Backhouse, Stefan Zohren, Anisoara Calinescu, Mihai Cucuringu$^\dagger$, Jakob Foerster$^\dagger$
+Kang Li*, _Bidipta Sarkar*_, Zheng Xiong*, Sascha Frey, Zilin Wang, Frensi Zejnullahu, Alfred Backhouse, Stefan Zohren, Anisoara Calinescu, Mihai Cucuringu$^\dagger$, Jakob Foerster$^\dagger$
 
 /ACM International Conference on AI in Finance *(Oral)*, November 2025/
 
