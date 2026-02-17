@@ -25,7 +25,7 @@
 
 ** Evolution Strategies at the Hyperscale
 #+html: <div class="outline-text-3-inner">
-_Bidipta Sarkar*_, Mattie Fellows*, Juan Agustin Duque*, Alistair Letcher$^\dagger$, Antonio León Villares$^\dagger$, Anya Sims$^\dagger$, Dylan Cope$^\dagger$, Jarek Liesen$^\dagger$, Lukas Seier$^\dagger$, Theo Wolf$^\dagger$, Uljad Berdica$^\dagger$, Alexander David Goldie, Aaron Courville, Karin Sevegnani, Shimon Whiteson*, Jakob Nicolaus Foerster*
+_Bidipta Sarkar*_, Mattie Fellows*, Juan Agustin Duque*, Alistair Letcher$^\dagger$, Antonio León Villares$^\dagger$, Anya Sims$^\dagger$, Clarisse Wibault$^\dagger$, Dmitry Samsonov$^\dagger$, Dylan Cope$^\dagger$, Jarek Liesen$^\dagger$, Kang Li$^\dagger$, Lukas Seier$^\dagger$, Theo Wolf$^\dagger$, Uljad Berdica$^\dagger$, Valentin Mohl$^\dagger$, Alexander David Goldie, Aaron Courville, Karin Sevegnani, Shimon Whiteson*, Jakob Nicolaus Foerster*
 
 /arXiv preprint, November 2025/
 
