@@ -23,6 +23,18 @@
 
 * Publications
 
+** Learning to Drive in New Cities Without Human Demonstrations
+#+html: <div class="outline-text-3-inner">
+Zilin Wang*, Saeed Rahmani*, Daphne Cornelisse, _Bidipta Sarkar_, Alexander David Goldie, Jakob Nicolaus Foerster*, Shimon Whiteson*
+
+/arXiv preprint, February 2026/
+
+[[https://arxiv.org/abs/2602.15891][Paper]] / [[https://nomaddrive.github.io/][Website]] / [[https://github.com/nomaddrive/nomad][Code]]
+
+#+html: </div>
+
+[[file:../old_reports/nomad.png]]
+
 ** Evolution Strategies at the Hyperscale
 #+html: <div class="outline-text-3-inner">
 _Bidipta Sarkar*_, Mattie Fellows*, Juan Agustin Duque*, Alistair Letcher$^\dagger$, Antonio León Villares$^\dagger$, Anya Sims$^\dagger$, Clarisse Wibault$^\dagger$, Dmitry Samsonov$^\dagger$, Dylan Cope$^\dagger$, Jarek Liesen$^\dagger$, Kang Li$^\dagger$, Lukas Seier$^\dagger$, Theo Wolf$^\dagger$, Uljad Berdica$^\dagger$, Valentin Mohl$^\dagger$, Alexander David Goldie, Aaron Courville, Karin Sevegnani, Shimon Whiteson*, Jakob Nicolaus Foerster*
