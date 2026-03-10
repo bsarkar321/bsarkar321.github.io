@@ -1,6 +1,6 @@
 #+title: Bidipta Sarkar
 #+author: Bidipta Sarkar
-#+email: bidiptas@stanford.edu
+#+email: bidipta.sarkar@eng.ox.ac.uk
 #+description: Bidipta Sarkar's Personal Homepage
 #+KEYWORDS: homepage, website, research, AI, RL, MARL, Vision, Graphics
 #+LANGUAGE:  en
@@ -24,6 +24,8 @@
 :PROPERTIES:
 :CUSTOM_ID: blog-post
 :END:
+
+** (December 2025, Livestream) [[https://www.youtube.com/watch?v=LngUF-g1caM][EGGROLL Discussion with Yacine Mahdid]]
 
 ** (May 2025) [[https://easyacademicwebsite.github.io/][Easy Academic Website Template (With Instructions)]]
 

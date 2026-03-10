@@ -134,6 +134,18 @@ _Bidipta Sarkar*_, Aditi Talati*, Andy Shih*, Dorsa Sadigh
 
 * Workshop Papers
 
+** Zero-Shot Coordination among LLM Agents
+#+html: <div class="outline-text-3-inner">
+Adrian Hayler*, Shashank Reddy Chirra*, Andrei Lupu, Johannes Forkel, _Bidipta Sarkar_, Siheng Feng, Jakob Nicolaus Foerster
+
+/ICLR Workshop on Multi-Agent Learning and Its Opportunities in the Era of Generative AI, April 2026/
+
+[[https://openreview.net/forum?id=HHPbQlyA7Y][Paper]]
+#+html: </div>
+
+[[file:../old_reports/text_and_code_agents_v2.png]]
+
+
 ** An Interactive Agent Foundation Model
 #+html: <div class="outline-text-3-inner">
 Zane Durante*, _Bidipta Sarkar*_, Ran Gong*, Rohan Taori, Yusuke Noda, Paul Tang, Ehsan Adeli, Shrinidhi Kowshika Lakshmikanth, Kevin Schulman, Arnold Milstein, Demetri Terzopoulos, Ade Famoti, Noboru Kuno, Ashley Llorens, Hoi Vo, Katsu Ikeuchi, Li Fei-Fei, Jianfeng Gao, Naoki Wake*, Qiuyuan Huang*
